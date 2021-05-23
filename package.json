@@ -1,0 +1,26 @@
+{
+  "name": "vk_api_parser",
+  "version": "1.0.0",
+  "description": "VK API Parser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srgykim/vk_api_parser.git"
+  },
+  "keywords": [
+    "VK"
+  ],
+  "author": "Sergey Kim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/srgykim/vk_api_parser/issues"
+  },
+  "homepage": "https://github.com/srgykim/vk_api_parser#readme",
+  "dependencies": {
+    "@google-cloud/bigquery": "^5.6.0",
+    "axios": "^0.21.1"
+  }
+}
