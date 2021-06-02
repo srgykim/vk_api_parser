@@ -7,19 +7,17 @@ const {BigQuery} = require(`@google-cloud/bigquery`);
 const bigqueryClient = new BigQuery();
 
 async function insertRowsAsStream(rows, tableId, datasetId) {
-    await bigqueryClient
-        .dataset(datasetId)
-        .table(tableId)
-        .insert(rows);
-}
-
-async function insertRowsAsStream(rows, tableId, datasetId) {
-    await bigqueryClient
-        .dataset(datasetId)
-        .table(tableId)
-        .insert(rows);
+    try {
+        await bigqueryClient
+            .dataset(datasetId)
+            .table(tableId)
+            .insert(rows);
+    } catch(error) {
+        console.error(error);
+    }
 }
 
 module.exports = {
+    bigqueryClient,
     insertRowsAsStream
 }
