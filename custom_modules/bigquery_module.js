@@ -6,6 +6,12 @@ const {BigQuery} = require(`@google-cloud/bigquery`);
 
 const bigqueryClient = new BigQuery();
 
+/*
+* Добавить записи в БД.
+* @param {rows} - список объектов
+* @{tableId} - название таблицы
+* @{datasetId} - название набора данных
+* */
 async function insertRowsAsStream(rows, tableId, datasetId) {
     try {
         await bigqueryClient
@@ -17,7 +23,20 @@ async function insertRowsAsStream(rows, tableId, datasetId) {
     }
 }
 
+/*
+* Выполнить запрос в БД
+* @param {sqlQuery} - запрос в БД в виде строки
+* */
+async function queryDB(sqlQuery) {
+    const options = {
+        query: sqlQuery
+    };
+    const [rows] = await bigqueryClient.query(options);
+
+    return rows;
+}
+
 module.exports = {
-    bigqueryClient,
-    insertRowsAsStream
+    insertRowsAsStream,
+    queryDB
 }

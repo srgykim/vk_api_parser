@@ -1,6 +1,7 @@
 `use strict`;
 
 const axios = require(`axios`);
+const easyvk = require(`easyvk`);
 
 /*
 * Получить пользователя по ID
@@ -35,14 +36,41 @@ async function searchUsers(q, city, ageFrom, ageTo, accessToken) {
 }
 
 /*
-* Создать беседу с пользоваетелем Вконтакте.
-* @param {userIds} - список ID пользователей
-* @param {title} - название беседы
-* @param {accessToken} - токен авторизации
+* Отправить сообщение VK с вложенной картинкой.
+*
+* @param {userId} - ID пользователия Вконтакте
+* @param {imageUrl} - ссылка на изображение
+* @param {adText} - рекламный текст для отправки
 * */
-async function createChat(userIds, title, accessToken) {
+async function sendMessage(userId, imageUrl, adText) {
     try {
-        await axios.get(encodeURI(`https://api.vk.com/method/messages.createChat?user_ids=${userIds}&title${title}access_token=${accessToken}`))
+        easyvk({ /** Авторизуемся */
+            username: `lisafirstpkc24@gmail.com`,
+            password: `pkc24_vk_PASS`
+        }).then(async vk => {
+            /** Получаем URL для загрузки */
+            let {upload_url: uploadUrl} = await vk.call(`photos.getMessagesUploadServer`, {
+                peer_id: userId
+            });
+
+            /** Загружаем файл (url, file, field - photo, как в документации) */
+            let file =  await vk.uploader.uploadFetchedFile(uploadUrl, imageUrl, `photo`);
+
+            /** Сохряняем изображение */
+            let photo = await vk.post('photos.saveMessagesPhoto', file);
+            photo = photo[0];
+
+            /** Отправляем сообщение */
+            let response = await vk.call(`messages.send`, {
+                peer_id: userId,
+                message: adText,
+                attachment: [
+                    `photo${photo.owner_id}_${photo.id}_${photo.access_key}`,
+                ],
+                /** Получаем случайное число с привязкой к дате*/
+                random_id: easyvk.randomId()
+            })
+        });
     } catch(error) {
         console.error(error);
     }
@@ -51,5 +79,5 @@ async function createChat(userIds, title, accessToken) {
 module.exports = {
     getUser,
     searchUsers,
-    createChat
+    sendMessage
 }
