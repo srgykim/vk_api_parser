@@ -227,6 +227,6 @@ async function saveSentAdUserIds(path1, path2, filename) {
     // await sendPkcAds([{id: 176948395, first_name: `Сергей`, last_name: `Ким`, country: `Казахстан`, city: `Ровеньки`}]);
     // await sendPkcAds(clients);
 
-    // TODO: Раскомментировать, чтобы считать файл с сообщениями и сохранить ID пользователей, кому отправили рекламу.
+    // TODO: Раскомментировать, чтобы считать файлы с сообщениями и сохранить ID пользователей, кому отправили рекламу.
     await saveSentAdUserIds(`./dump/lisa_06_06_2021_dump.json`, `./dump/nastya_06_06_2021_dump.json`, `lisa_nastya_06_06_2021`);
 })();
