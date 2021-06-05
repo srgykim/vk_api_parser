@@ -88,8 +88,9 @@ function sleep(ms) {
 * Отправить рекалмную рассылку пользователям Вконтакте.
 *
 * @param {users} - список пользователей
+* @param {adPage} - страница отправки рекламы
 * */
-async function sendPkcAds(users) {
+async function sendPkcAds(users, adPage) {
     for (client of users) {
         try {
         let textToSend = `Добрый день, ${client.first_name}!
@@ -140,7 +141,7 @@ async function sendPkcAds(users) {
         await sleep(5000);
 
         // TODO: отслеживать ошибки от сюда
-        await feedModule.sendMessage(client.id, `https://i.imgur.com/EJrC5x2.png`, textToSend);
+        await feedModule.sendMessage(client.id, `https://i.imgur.com/EJrC5x2.png`, textToSend, adPage);
 
         await sleep(5000);
         } catch (error) {
@@ -158,7 +159,11 @@ async function sendPkcAds(users) {
 * */
 async function addNonExistingUser(users, nonExistingUser) {
     const found = users.some(el => el.id === nonExistingUser.id);
-    if (!found) return nonExistingUser;
+    if (!found) {
+        return nonExistingUser;
+    } else {
+        return null;
+    }
 }
 
 
@@ -209,8 +214,11 @@ async function saveSentAdUserIds(paths, adPages, filename) {
     const table = await dataset.table(`vk_fct_users_ad_sent`);
     for (user of sentAdsUsers) {
         // Записать новых пользователей, которым отправили рекламу, в БД:
-        await table.insert(await addNonExistingUser(existingUsers, user));
-        sleep(5000);
+        let newUser = await addNonExistingUser(existingUsers, user);
+        if (newUser !== null) {
+            await table.insert(newUser);
+        }
+        sleep(2000);
     }
 }
 
@@ -219,34 +227,34 @@ async function saveSentAdUserIds(paths, adPages, filename) {
     // const potentialPkcClients = await searchPkcPotentialClients();
 
     // 2. TODO: Раскомментировать, чтобы разослать рекламу.
-    // const clients = await bigqueryModule.queryDB(`
-    //         -- Список всех пользователей в городах с отделениями ПКЦ
-    //         select
-    //             distinct
-    //             cast(u.id as string) id,
-    //             u.first_name,
-    //             u.last_name,
-    //             u.country,
-    //             case when u.city = 'Свердловск / Должанск' then 'Свердловск' else u.city end city
-    //         from
-    //             \`srgykim-dwh.srgykim_dwh_social.vk_fct_users\` u
-    //         where
-    //             1 = 1
-    //             and u.ad_sent_flag != 1
-    //             and parse_date('%d.%m.%Y', format_date('%d.%m.%Y', u.time_id)) between
-    //                 parse_date('%d.%m.%Y', '02.06.2021')
-    //                     and
-    //                 parse_date('%d.%m.%Y', '02.06.2021')
-    //         order by
-    //             1
-    // `);
+    const clients = await bigqueryModule.queryDB(`
+            -- Список всех пользователей в городах с отделениями ПКЦ
+            select
+                distinct
+                cast(u.id as string) id,
+                u.first_name,
+                u.last_name,
+                u.country,
+                case when u.city = 'Свердловск / Должанск' then 'Свердловск' else u.city end city
+            from
+                \`srgykim-dwh.srgykim_dwh_social.vk_fct_users\` u
+            where
+                1 = 1
+                and u.ad_sent_flag != 1
+                and parse_date('%d.%m.%Y', format_date('%d.%m.%Y', u.time_id)) between
+                    parse_date('%d.%m.%Y', '02.06.2021')
+                        and
+                    parse_date('%d.%m.%Y', '02.06.2021')
+            order by
+                1
+    `);
     // await sendPkcAds([{id: 176948395, first_name: `Сергей`, last_name: `Ким`, country: `Казахстан`, city: `Ровеньки`}]);
-    // await sendPkcAds(clients);
+    // await sendPkcAds(clients, {login: `lisafirstpkc24@gmail.com`, password: `pkc24_vk_PASS`});
 
     // 3. TODO: Раскомментировать, чтобы считать файлы с сообщениями и сохранить ID пользователей, кому отправили рекламу.
     // await saveSentAdUserIds(
-    //     [`./dump/lisa_06_06_2021_dump.json`, `./dump/nastya_06_06_2021_dump.json`, `./dump/julia_06_06_2021_dump.json`],
-    //     [`Лиза Первая`, `Анастасия Самойлова`, `Юля Первая`],
-    //     `lisa_nastya_julia_06_06_2021`
+    //     [`./dump/lisa_08_06_2021_dump.json`, `./dump/pasha_08_06_2021_dump.json`, `./dump/julia_08_06_2021_dump.json`],
+    //     [`Лиза Первая`, `Паша Первый`, `Юля Первая`],
+    //     `lisa_pasha_julia_08_06_2021`
     // );
 })();
