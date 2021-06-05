@@ -46,8 +46,8 @@ async function searchUsers(q, city, ageFrom, ageTo, accessToken) {
 async function sendMessage(userId, imageUrl, adText) {
     try {
         easyvk({ /** Авторизуемся */
-            username: `+380667595450`,
-            password: `pkc1qwerty1pkc1`
+            username: `juliafirstpkc24@gmail.com`,
+            password: `pkc24_vk_PASS`
         }).then(async vk => {
             /** Получаем URL для загрузки */
             let {upload_url: uploadUrl} = await vk.call(`photos.getMessagesUploadServer`, {

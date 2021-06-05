@@ -77,6 +77,14 @@ async function searchPkcPotentialClients() {
 }
 
 /*
+* Функция паузы.
+* @param {ms} - миллисекунды
+* */
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+/*
 * Отправить рекалмную рассылку пользователям Вконтакте.
 *
 * @param {users} - список пользователей
@@ -106,7 +114,7 @@ async function sendPkcAds(users) {
 
         let nearestAddresses = ``;
         for (address of addresses) {
-            nearestAddresses = nearestAddresses.concat(
+            nearestAddresses = await nearestAddresses.concat(
                 `
 Отделение №${address.bank_no}:
 Адрес: ${address.address}
@@ -114,9 +122,9 @@ async function sendPkcAds(users) {
             `
             );
         }
-        textToSend = textToSend.concat(nearestAddresses);
+        textToSend = await textToSend.concat(nearestAddresses);
 
-        await console.log(client);
+        await console.log(JSON.stringify(client).concat(`,`));
 
         await bigqueryModule.queryDB(`
             update
@@ -129,80 +137,88 @@ async function sendPkcAds(users) {
                 and v.id = ${client.id};
         `);
 
+        await sleep(5000);
+
         // TODO: отслеживать ошибки от сюда
         await feedModule.sendMessage(client.id, `https://i.imgur.com/EJrC5x2.png`, textToSend);
+
+        await sleep(5000);
         } catch (error) {
-            console.error(`О-Ш-И-Б-К-А    П-Р-И    О-Т-П-Р-А-В-К-Е    Р-Е-К-Л-А-М-Ы`);
-            console.error(error);
+            await console.error(`О-Ш-И-Б-К-А    П-Р-И    О-Т-П-Р-А-В-К-Е    Р-Е-К-Л-А-М-Ы`);
+            await console.error(error);
             break;
         }
     }
 }
 
 /*
-* Добавить несущетсвующий объект в массив по ID.
-* @param {nonExistingUsers} - список несущетсвующих пользователей
-* @param {existingUsers} - список существующих пользователей
+* Добавить несущетсвующего пользователя в массив по ID.
+* @param {users} - список всех пользователей
 * @param {nonExistingUser} - новый несуществующий пользователь
 * */
-async function addNonExistingUser(nonExistingUsers, existingUsers, nonExistingUser) {
-    const found = existingUsers.some(el => el.id === nonExistingUser.id);
-    if (!found) nonExistingUsers.push(nonExistingUser);
-    return nonExistingUsers;
+async function addNonExistingUser(users, nonExistingUser) {
+    const found = users.some(el => el.id === nonExistingUser.id);
+    if (!found) return nonExistingUser;
 }
+
 
 /*
 * Считать файлы с сообщениями для сохранения в БД. Файлы нужно скачать от сюда https://vk.com/dev/messages.getConversations
-* @param {path1} - путь к файлу Лизы
-* @param {path2} - путь к файлу Насти
+* @param {path} - пути к файлам страниц, скоторых идёт рассылка
+* @param {adPages} - страницы, с которых отправляется реклама (Лиза, Настя, Юля)
 * */
-async function saveSentAdUserIds(path1, path2, filename) {
-    let sentAdsUsersIds = [];
-    const lisaMessages = await feedModule.readMessagesFromFile(path1);
-    const nastyaMessages = await feedModule.readMessagesFromFile(path2);
+async function saveSentAdUserIds(paths, adPages, filename) {
+    /*
+    * Функция для связывания двух массивов, чтобы пробежаться по ним одним циклом.
+    * @param {a} - первый массив
+    * @param {b} - второй массив
+    * */
+    var zip = (a, b) => a.map((x, i) => [x, b[i]]);
 
-    for (message of lisaMessages) {
-        if (message.includes(`peer_id`)) {
-            sentAdsUsersIds.push({
-                time_id: new Date().toISOString()
-                    .replace(/T/, ` `)
-                    .replace(/\..+/, ``),
-                id: message.replace(`"peer_id": `, ``).replace(`,`, ``).trim(),
-                full_name: `Лиза Первая`
-            });
+    let sentAdsUsers = [];
+    let rawMessagesPages = [];
+
+    // Считать построчно все сообщения со всех dump-файлов, скачанных с консоли ВКонтакте, т.к. сам JSON - поломанный:
+    for (path of paths) {
+        await rawMessagesPages.push(await feedModule.readMessagesFromFile(path));
+    }
+
+    // Найти всех пользователей, которым отправили рекламу и сохранить их в виде объектов:
+    for (let [pageMessages, adPage] of zip(rawMessagesPages, adPages)) {
+        for (message of pageMessages) {
+            if (message.includes(`peer_id`)) {
+                await sentAdsUsers.push({
+                    time_id: new Date().toISOString()
+                        .replace(/T/, ` `)
+                        .replace(/\..+/, ``),
+                    id: message.replace(`"peer_id": `, ``).replace(`,`, ``).trim(),
+                    full_name: adPage
+                });
+            }
         }
     }
 
-    for (message of nastyaMessages) {
-        if (message.includes(`peer_id`)) {
-            sentAdsUsersIds.push({
-                time_id: new Date().toISOString()
-                    .replace(/T/, ` `)
-                    .replace(/\..+/, ``),
-                id: message.replace(`"peer_id": `, ``).replace(`,`, ``).trim(),
-                full_name: `Анастасия Самойлова`
-            });
-        }
-    }
+    // Сохранить найденных пользователей в файл:
+    await saveToFile(JSON.stringify(sentAdsUsers), filename);
 
-    await saveToFile(JSON.stringify(sentAdsUsersIds), filename);
-
+    // Найти уже записанных в БД:
     const existingUsers = await bigqueryModule.queryDB(`select * from \`srgykim-dwh.srgykim_dwh_for_tests.vk_fct_users_ad_sent\``);
-    const nonExistingUsers = [];
-    for (user of sentAdsUsersIds) {
-        await addNonExistingUser(nonExistingUsers, existingUsers, user);
-    }
 
+    // Из них оставить только тех, кого в БД еще не записали
     const dataset = await bigqueryModule.bigqueryClient.dataset(`srgykim_dwh_for_tests`);
     const table = await dataset.table(`vk_fct_users_ad_sent`);
-    await table.insert(existingUsers);
+    for (user of sentAdsUsers) {
+        // Записать новых пользователей, которым отправили рекламу, в БД:
+        await table.insert(await addNonExistingUser(existingUsers, user));
+        sleep(5000);
+    }
 }
 
 (async () => {
-    // TODO: Раскомменитровать, чтобы найти пользователей.
+    // 1. TODO: Раскомменитровать, чтобы найти пользователей.
     // const potentialPkcClients = await searchPkcPotentialClients();
 
-    // TODO: Раскомментировать, чтобы разослать рекламу.
+    // 2. TODO: Раскомментировать, чтобы разослать рекламу.
     // const clients = await bigqueryModule.queryDB(`
     //         -- Список всех пользователей в городах с отделениями ПКЦ
     //         select
@@ -227,6 +243,10 @@ async function saveSentAdUserIds(path1, path2, filename) {
     // await sendPkcAds([{id: 176948395, first_name: `Сергей`, last_name: `Ким`, country: `Казахстан`, city: `Ровеньки`}]);
     // await sendPkcAds(clients);
 
-    // TODO: Раскомментировать, чтобы считать файлы с сообщениями и сохранить ID пользователей, кому отправили рекламу.
-    await saveSentAdUserIds(`./dump/lisa_06_06_2021_dump.json`, `./dump/nastya_06_06_2021_dump.json`, `lisa_nastya_06_06_2021`);
+    // 3. TODO: Раскомментировать, чтобы считать файлы с сообщениями и сохранить ID пользователей, кому отправили рекламу.
+    // await saveSentAdUserIds(
+    //     [`./dump/lisa_06_06_2021_dump.json`, `./dump/nastya_06_06_2021_dump.json`, `./dump/julia_06_06_2021_dump.json`],
+    //     [`Лиза Первая`, `Анастасия Самойлова`, `Юля Первая`],
+    //     `lisa_nastya_julia_06_06_2021`
+    // );
 })();
