@@ -24,16 +24,21 @@ async function insertRowsAsStream(rows, tableId, datasetId) {
 }
 
 /*
-* Выполнить запрос в БД
+* Выполнить запрос в БД.
 * @param {sqlQuery} - запрос в БД в виде строки
 * */
 async function queryDB(sqlQuery) {
     const options = {
         query: sqlQuery
     };
-    const [rows] = await bigqueryClient.query(options);
 
-    return rows;
+    try {
+        const [rows] = await bigqueryClient.query(options);
+
+        return rows;
+    } catch(error) {
+        console.error(error);
+    }
 }
 
 module.exports = {

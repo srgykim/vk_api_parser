@@ -77,16 +77,17 @@ async function searchPkcPotentialClients() {
 }
 
 /*
-* Отправить рекалмную рассылку пользователям Вконтакте
+* Отправить рекалмную рассылку пользователям Вконтакте.
 *
 * @param {users} - список пользователей
 * */
-async function sendAds(users) {
+async function sendPkcAds(users) {
     for (client of users) {
+        try {
         let textToSend = `Добрый день, ${client.first_name}!
         
         У нас для вас хорошая новость. Наши отделения есть в вашем городе (${client.city}). В них вы можете снять или отправить деньги с карт и кошельков, перевести деньги зарубеж, обменять валюту, пополнить баланс телефона и многое другое. Найдите удобное для вас по адресам ниже, чтобы воспользоваться нашими услугами. 
-        Подробнее на сайте pkc24.ru или телефону.
+        Подробнее на сайте pkc24.ru или по телефону, или заказав обратный звонок, заполнив форму обратной связи по ссылке vk.cc/c2E8T7
         `;
 
         const addresses = await bigqueryModule.queryDB(`
@@ -113,7 +114,12 @@ async function sendAds(users) {
             );
         }
         textToSend = textToSend.concat(nearestAddresses);
+
+        await console.log(client);
+
+        // TODO: отслеживать ошибки от сюда
         await feedModule.sendMessage(client.id, `https://i.imgur.com/EJrC5x2.png`, textToSend);
+
         await bigqueryModule.queryDB(`
             update
                 \`srgykim-dwh.srgykim_dwh_for_tests.vk_fct_users\` v
@@ -123,34 +129,81 @@ async function sendAds(users) {
                 1 = 1
                 and v.id = ${client.id};
         `);
+        } catch (error) {
+            console.error(`О-Ш-И-Б-К-А    П-Р-И    О-Т-П-Р-А-В-К-Е    Р-Е-К-Л-А-М-Ы`);
+            console.error(error);
+            break;
+        }
     }
 }
 
+/*
+* Считать файлы с сообщениями для сохранения в БД. Файлы нужно скачать от сюда https://vk.com/dev/messages.getConversations
+* @param {path1} - путь к файлу Лизы
+* @param {path2} - путь к файлу Насти
+* */
+async function saveSentAdUserIds(path1, path2) {
+    let sentAdsUsersIds = [];
+    const lisaMessages = await feedModule.readMessagesFromFile(path1);
+    const nastyaMessages = await feedModule.readMessagesFromFile(path2);
+
+    for (message of lisaMessages) {
+        if (message.includes(`peer_id`)) {
+            sentAdsUsersIds.push({
+                time_id: new Date().toISOString()
+                    .replace(/T/, ` `)
+                    .replace(/\..+/, ``),
+                id: message.replace(`"peer_id": `, ``).replace(`,`, ``).trim(),
+                full_name: `Лиза Первая`
+            });
+        }
+    }
+
+    for (message of nastyaMessages) {
+        if (message.includes(`peer_id`)) {
+            sentAdsUsersIds.push({
+                time_id: new Date().toISOString()
+                    .replace(/T/, ` `)
+                    .replace(/\..+/, ``),
+                id: message.replace(`"peer_id": `, ``).replace(`,`, ``).trim(),
+                full_name: `Анастасия Самойлова`
+            });
+        }
+    }
+
+    await saveToFile(JSON.stringify(sentAdsUsersIds), `lisa_nastya_05_06_2021.json`);
+    await bigqueryModule.insertRowsAsStream(sentAdsUsersIds, `vk_fct_users_ad_sent`, `srgykim_dwh_for_tests`);
+}
+
 (async () => {
-    // TODO: Раскомменитровать, чтобы найти пользователей
+    // TODO: Раскомменитровать, чтобы найти пользователей.
     // const potentialPkcClients = await searchPkcPotentialClients();
 
-    // TODO: Раскомментировать, чтобы разослать рекламу
-    const clients = await bigqueryModule.queryDB(`
-            -- Список всех пользователей в городах с отделениями ПКЦ
-            select 
-                distinct
-                cast(u.id as string) id,
-                u.first_name,
-                u.last_name,
-                u.country,
-                case when u.city = 'Свердловск / Должанск' then 'Свердловск' else u.city end city
-            from
-                \`srgykim-dwh.srgykim_dwh_for_tests.vk_fct_users\` u
-            where
-                1 = 1
-                and u.ad_sent_flag != 1
-                and parse_date('%d.%m.%Y', format_date('%d.%m.%Y', u.time_id)) between 
-                    parse_date('%d.%m.%Y', '02.06.2021') 
-                        and
-                    parse_date('%d.%m.%Y', '02.06.2021')
-            order by
-                1
-    `);
-    await sendAds([{id: 176948395, first_name: `Сергей`, last_name: `Ким`, country: `Казахстан`, city: `Ровеньки`}]);
+    // TODO: Раскомментировать, чтобы разослать рекламу.
+    // const clients = await bigqueryModule.queryDB(`
+    //         -- Список всех пользователей в городах с отделениями ПКЦ
+    //         select
+    //             distinct
+    //             cast(u.id as string) id,
+    //             u.first_name,
+    //             u.last_name,
+    //             u.country,
+    //             case when u.city = 'Свердловск / Должанск' then 'Свердловск' else u.city end city
+    //         from
+    //             \`srgykim-dwh.srgykim_dwh_for_tests.vk_fct_users\` u
+    //         where
+    //             1 = 1
+    //             and u.ad_sent_flag != 1
+    //             and parse_date('%d.%m.%Y', format_date('%d.%m.%Y', u.time_id)) between
+    //                 parse_date('%d.%m.%Y', '02.06.2021')
+    //                     and
+    //                 parse_date('%d.%m.%Y', '02.06.2021')
+    //         order by
+    //             1
+    // `);
+    // await sendPkcAds([{id: 176948395, first_name: `Сергей`, last_name: `Ким`, country: `Казахстан`, city: `Ровеньки`}]);
+    // await sendPkcAds(clients);
+
+    // TODO: Раскомментировать, чтобы считать файл с сообщениями.
+    // await saveSentAdUserIds(`./dump/lisa_05_06_2021_dump.json`, `./dump/nastya_05_06_2021_dump.json`);
 })();

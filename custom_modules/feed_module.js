@@ -2,11 +2,12 @@
 
 const axios = require(`axios`);
 const easyvk = require(`easyvk`);
+const fs = require(`fs`);
 
 /*
-* Получить пользователя по ID
+* Получить пользователя по ID.
 * @param {userID} - ID пользователя
-* @param {accessToken} - токен авторизации. Может быть получен по ссылке https://developers.facebook.com/tools/explorer
+* @param {accessToken} - токен авторизации
 * */
 async function getUser(userID, accessToken) {
     try {
@@ -19,11 +20,11 @@ async function getUser(userID, accessToken) {
 }
 
 /*
-* Найти пользователей по параметрам
+* Найти пользователей по параметрам.
 * @param {q} - ФИО пользователя
 * @param {ageFrom} - возраст от
 * @param {ageTo} - возраст до
-* @param {accessToken} - токен авторизации.
+* @param {accessToken} - токен авторизации
 * */
 async function searchUsers(q, city, ageFrom, ageTo, accessToken) {
     try {
@@ -45,8 +46,8 @@ async function searchUsers(q, city, ageFrom, ageTo, accessToken) {
 async function sendMessage(userId, imageUrl, adText) {
     try {
         easyvk({ /** Авторизуемся */
-            username: `lisafirstpkc24@gmail.com`,
-            password: `pkc24_vk_PASS`
+            username: `+380667595450`,
+            password: `pkc1qwerty1pkc1`
         }).then(async vk => {
             /** Получаем URL для загрузки */
             let {upload_url: uploadUrl} = await vk.call(`photos.getMessagesUploadServer`, {
@@ -72,12 +73,29 @@ async function sendMessage(userId, imageUrl, adText) {
             })
         });
     } catch(error) {
-        console.error(error);
+        throw error;
     }
+}
+
+/**
+ * Считать файл с сообщениями.
+ * @param path - путь к файлу
+ */
+function readMessagesFromFile(path){
+    return new Promise((resolve, reject) => {
+        fs.readFile(path, 'utf8', (err, data) => {
+            if (err) {
+                reject(err);
+            } else {
+                resolve(data.toString().split(`\n`));
+            }
+        });
+    });
 }
 
 module.exports = {
     getUser,
     searchUsers,
-    sendMessage
+    sendMessage,
+    readMessagesFromFile
 }

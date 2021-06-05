@@ -1,0 +1,2406 @@
+{
+  "response": {
+    "count": 19,
+    "items": [{
+      "conversation": {
+        "peer": {
+          "id": 102978597,
+          "type": "user",
+          "local_id": 102978597
+        },
+        "last_message_id": 58,
+        "in_read": 58,
+        "out_read": 58,
+        "sort_id": {
+          "major_id": 0,
+          "minor_id": 58
+        },
+        "is_marked_unread": false,
+        "important": false,
+        "can_write": {
+          "allowed": true
+        }
+      },
+      "last_message": {
+        "date": 1622883474,
+        "from_id": 657727896,
+        "id": 58,
+        "out": 1,
+        "peer_id": 102978597,
+        "text": "Добрый день, Сергей!
+
+        У нас для вас хорошая новость. Наши отделения есть в вашем городе (Алчевск). В них вы можете снять или отправить деньги с карт и кошельков, перевести деньги зарубеж, обменять валюту, пополнить баланс телефона и многое другое. Найдите удобное для вас по адресам ниже, чтобы воспользоваться нашими услугами.
+        Подробнее на сайте pkc24.ru или по телефону, или заказав обратный звонок, заполнив форму обратной связи по ссылке vk.cc/c2E8T7
+
+        Отделение №8:
+        Адрес: ул. Ленина 56
+        Телефоны: +38 (066) 842-05-65, +38 (072) 192-39-93
+
+        Отделение №9:
+        Адрес: ул. Фрунзе 31/14
+        Телефоны: +38 (072) 192-39-94, +38 (066) 954-469-1
+
+        Отделение №48:
+        Адрес: ул. Гмыри, 20 (бывший офис Алчевск.net)
+        Телефоны: +38 (072) 19-24-015, +38 (066) 70-34-653
+
+        Отделение №65:
+        Адрес: ул. Ленина, 80а
+        Телефоны: +38 (072) 181-11-76, +38 (050) 939-56-58",
+        "conversation_message_id": 1,
+        "fwd_messages": [],
+        "important": false,
+        "random_id": 1681933980,
+        "attachments": [{
+          "type": "photo",
+          "photo": {
+            "album_id": -3,
+            "date": 1622883474,
+            "id": 457239055,
+            "owner_id": 657727896,
+            "has_tags": false,
+            "access_key": "2a87de5ea3e743e83d",
+            "sizes": [{
+              "height": 73,
+              "url": "https://sun9-34.u...4f2Q&type=album",
+              "type": "s",
+              "width": 75
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "m",
+              "width": 130
+            }, {
+              "height": 585,
+              "url": "https://sun9-34.u...-ODE&type=album",
+              "type": "x",
+              "width": 604
+            }, {
+              "height": 782,
+              "url": "https://sun9-34.u...InfM&type=album",
+              "type": "y",
+              "width": 807
+            }, {
+              "height": 1046,
+              "url": "https://sun9-34.u...Oh9c&type=album",
+              "type": "z",
+              "width": 1080
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "o",
+              "width": 130
+            }, {
+              "height": 194,
+              "url": "https://sun9-34.u...l8N4&type=album",
+              "type": "p",
+              "width": 200
+            }, {
+              "height": 310,
+              "url": "https://sun9-34.u...foWg&type=album",
+              "type": "q",
+              "width": 320
+            }, {
+              "height": 494,
+              "url": "https://sun9-34.u...rGYA&type=album",
+              "type": "r",
+              "width": 510
+            }],
+            "text": ""
+          }
+        }],
+        "is_hidden": false
+      }
+    }, {
+      "conversation": {
+        "peer": {
+          "id": 102715232,
+          "type": "user",
+          "local_id": 102715232
+        },
+        "last_message_id": 57,
+        "in_read": 57,
+        "out_read": 57,
+        "sort_id": {
+          "major_id": 0,
+          "minor_id": 57
+        },
+        "is_marked_unread": false,
+        "important": false,
+        "can_write": {
+          "allowed": true
+        }
+      },
+      "last_message": {
+        "date": 1622883465,
+        "from_id": 657727896,
+        "id": 57,
+        "out": 1,
+        "peer_id": 102715232,
+        "text": "Добрый день, Вера!
+
+        У нас для вас хорошая новость. Наши отделения есть в вашем городе (Кировск). В них вы можете снять или отправить деньги с карт и кошельков, перевести деньги зарубеж, обменять валюту, пополнить баланс телефона и многое другое. Найдите удобное для вас по адресам ниже, чтобы воспользоваться нашими услугами.
+        Подробнее на сайте pkc24.ru или по телефону, или заказав обратный звонок, заполнив форму обратной связи по ссылке vk.cc/c2E8T7
+
+        Отделение №71:
+        Адрес: ул. 23 Партсъезда, 4
+        Телефоны: + 38 (050) 699-34-59, + 38 (072) 184-54-94",
+        "conversation_message_id": 1,
+        "fwd_messages": [],
+        "important": false,
+        "random_id": 823137200,
+        "attachments": [{
+          "type": "photo",
+          "photo": {
+            "album_id": -3,
+            "date": 1622883465,
+            "id": 457239052,
+            "owner_id": 657727896,
+            "has_tags": false,
+            "access_key": "46bc3735d71b5e98b6",
+            "sizes": [{
+              "height": 73,
+              "url": "https://sun9-34.u...4f2Q&type=album",
+              "type": "s",
+              "width": 75
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "m",
+              "width": 130
+            }, {
+              "height": 585,
+              "url": "https://sun9-34.u...-ODE&type=album",
+              "type": "x",
+              "width": 604
+            }, {
+              "height": 782,
+              "url": "https://sun9-34.u...InfM&type=album",
+              "type": "y",
+              "width": 807
+            }, {
+              "height": 1046,
+              "url": "https://sun9-34.u...Oh9c&type=album",
+              "type": "z",
+              "width": 1080
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "o",
+              "width": 130
+            }, {
+              "height": 194,
+              "url": "https://sun9-34.u...l8N4&type=album",
+              "type": "p",
+              "width": 200
+            }, {
+              "height": 310,
+              "url": "https://sun9-34.u...foWg&type=album",
+              "type": "q",
+              "width": 320
+            }, {
+              "height": 494,
+              "url": "https://sun9-34.u...rGYA&type=album",
+              "type": "r",
+              "width": 510
+            }],
+            "text": ""
+          }
+        }],
+        "is_hidden": false
+      }
+    }, {
+      "conversation": {
+        "peer": {
+          "id": 102610065,
+          "type": "user",
+          "local_id": 102610065
+        },
+        "last_message_id": 56,
+        "in_read": 56,
+        "out_read": 56,
+        "sort_id": {
+          "major_id": 0,
+          "minor_id": 56
+        },
+        "is_marked_unread": false,
+        "important": false,
+        "can_write": {
+          "allowed": true
+        }
+      },
+      "last_message": {
+        "date": 1622883463,
+        "from_id": 657727896,
+        "id": 56,
+        "out": 1,
+        "peer_id": 102610065,
+        "text": "Добрый день, Елена!
+
+        У нас для вас хорошая новость. Наши отделения есть в вашем городе (Кировск). В них вы можете снять или отправить деньги с карт и кошельков, перевести деньги зарубеж, обменять валюту, пополнить баланс телефона и многое другое. Найдите удобное для вас по адресам ниже, чтобы воспользоваться нашими услугами.
+        Подробнее на сайте pkc24.ru или по телефону, или заказав обратный звонок, заполнив форму обратной связи по ссылке vk.cc/c2E8T7
+
+        Отделение №71:
+        Адрес: ул. 23 Партсъезда, 4
+        Телефоны: + 38 (050) 699-34-59, + 38 (072) 184-54-94",
+        "conversation_message_id": 1,
+        "fwd_messages": [],
+        "important": false,
+        "random_id": 559037980,
+        "attachments": [{
+          "type": "photo",
+          "photo": {
+            "album_id": -3,
+            "date": 1622883462,
+            "id": 457239051,
+            "owner_id": 657727896,
+            "has_tags": false,
+            "access_key": "23aeb641eae9274b4a",
+            "sizes": [{
+              "height": 73,
+              "url": "https://sun9-34.u...4f2Q&type=album",
+              "type": "s",
+              "width": 75
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "m",
+              "width": 130
+            }, {
+              "height": 585,
+              "url": "https://sun9-34.u...-ODE&type=album",
+              "type": "x",
+              "width": 604
+            }, {
+              "height": 782,
+              "url": "https://sun9-34.u...InfM&type=album",
+              "type": "y",
+              "width": 807
+            }, {
+              "height": 1046,
+              "url": "https://sun9-34.u...Oh9c&type=album",
+              "type": "z",
+              "width": 1080
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "o",
+              "width": 130
+            }, {
+              "height": 194,
+              "url": "https://sun9-34.u...l8N4&type=album",
+              "type": "p",
+              "width": 200
+            }, {
+              "height": 310,
+              "url": "https://sun9-34.u...foWg&type=album",
+              "type": "q",
+              "width": 320
+            }, {
+              "height": 494,
+              "url": "https://sun9-34.u...rGYA&type=album",
+              "type": "r",
+              "width": 510
+            }],
+            "text": ""
+          }
+        }],
+        "is_hidden": false
+      }
+    }, {
+      "conversation": {
+        "peer": {
+          "id": 102371706,
+          "type": "user",
+          "local_id": 102371706
+        },
+        "last_message_id": 55,
+        "in_read": 55,
+        "out_read": 55,
+        "sort_id": {
+          "major_id": 0,
+          "minor_id": 55
+        },
+        "is_marked_unread": false,
+        "important": false,
+        "can_write": {
+          "allowed": true
+        }
+      },
+      "last_message": {
+        "date": 1622883460,
+        "from_id": 657727896,
+        "id": 55,
+        "out": 1,
+        "peer_id": 102371706,
+        "text": "Добрый день, Наташа!
+
+        У нас для вас хорошая новость. Наши отделения есть в вашем городе (Молодогвардейск). В них вы можете снять или отправить деньги с карт и кошельков, перевести деньги зарубеж, обменять валюту, пополнить баланс телефона и многое другое. Найдите удобное для вас по адресам ниже, чтобы воспользоваться нашими услугами.
+        Подробнее на сайте pkc24.ru или по телефону, или заказав обратный звонок, заполнив форму обратной связи по ссылке vk.cc/c2E8T7
+
+        Отделение №12:
+        Адрес: ул. Ленина 18
+        Телефоны: +38 (072) 192-39-97, +38 (066) 206-239-8
+
+        Отделение №30:
+        Адрес: кв. Олега Кошевого 5
+        Телефоны: +38 (072) 149-13-74, +38 (050) 17-37-842",
+        "conversation_message_id": 1,
+        "fwd_messages": [],
+        "important": false,
+        "random_id": 317835500,
+        "attachments": [{
+          "type": "photo",
+          "photo": {
+            "album_id": -3,
+            "date": 1622883460,
+            "id": 457239050,
+            "owner_id": 657727896,
+            "has_tags": false,
+            "access_key": "b91c2523e8c73066bb",
+            "sizes": [{
+              "height": 73,
+              "url": "https://sun9-34.u...4f2Q&type=album",
+              "type": "s",
+              "width": 75
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "m",
+              "width": 130
+            }, {
+              "height": 585,
+              "url": "https://sun9-34.u...-ODE&type=album",
+              "type": "x",
+              "width": 604
+            }, {
+              "height": 782,
+              "url": "https://sun9-34.u...InfM&type=album",
+              "type": "y",
+              "width": 807
+            }, {
+              "height": 1046,
+              "url": "https://sun9-34.u...Oh9c&type=album",
+              "type": "z",
+              "width": 1080
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "o",
+              "width": 130
+            }, {
+              "height": 194,
+              "url": "https://sun9-34.u...l8N4&type=album",
+              "type": "p",
+              "width": 200
+            }, {
+              "height": 310,
+              "url": "https://sun9-34.u...foWg&type=album",
+              "type": "q",
+              "width": 320
+            }, {
+              "height": 494,
+              "url": "https://sun9-34.u...rGYA&type=album",
+              "type": "r",
+              "width": 510
+            }],
+            "text": ""
+          }
+        }],
+        "is_hidden": false
+      }
+    }, {
+      "conversation": {
+        "peer": {
+          "id": 102260514,
+          "type": "user",
+          "local_id": 102260514
+        },
+        "last_message_id": 54,
+        "in_read": 54,
+        "out_read": 0,
+        "sort_id": {
+          "major_id": 0,
+          "minor_id": 54
+        },
+        "is_marked_unread": false,
+        "important": false,
+        "can_write": {
+          "allowed": true
+        }
+      },
+      "last_message": {
+        "date": 1622883454,
+        "from_id": 657727896,
+        "id": 54,
+        "out": 1,
+        "peer_id": 102260514,
+        "text": "Добрый день, Владимир!
+
+        У нас для вас хорошая новость. Наши отделения есть в вашем городе (Краснодон). В них вы можете снять или отправить деньги с карт и кошельков, перевести деньги зарубеж, обменять валюту, пополнить баланс телефона и многое другое. Найдите удобное для вас по адресам ниже, чтобы воспользоваться нашими услугами.
+        Подробнее на сайте pkc24.ru или по телефону, или заказав обратный звонок, заполнив форму обратной связи по ссылке vk.cc/c2E8T7
+
+        Отделение №36:
+        Адрес: ул. Артема 9
+        Телефоны: +38 (072) 192-40-08, +38 (066) 237-45-17
+
+        Отделение №54:
+        Адрес: ул. Петра Котова, 35
+        Телефоны: +38 (099) 713-25-87, +38 (072) 163-43-62",
+        "conversation_message_id": 1,
+        "fwd_messages": [],
+        "important": false,
+        "random_id": -305157300,
+        "attachments": [{
+          "type": "photo",
+          "photo": {
+            "album_id": -3,
+            "date": 1622883454,
+            "id": 457239048,
+            "owner_id": 657727896,
+            "has_tags": false,
+            "access_key": "251aa1e42eaccdd6d6",
+            "sizes": [{
+              "height": 73,
+              "url": "https://sun9-34.u...4f2Q&type=album",
+              "type": "s",
+              "width": 75
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "m",
+              "width": 130
+            }, {
+              "height": 585,
+              "url": "https://sun9-34.u...-ODE&type=album",
+              "type": "x",
+              "width": 604
+            }, {
+              "height": 782,
+              "url": "https://sun9-34.u...InfM&type=album",
+              "type": "y",
+              "width": 807
+            }, {
+              "height": 1046,
+              "url": "https://sun9-34.u...Oh9c&type=album",
+              "type": "z",
+              "width": 1080
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "o",
+              "width": 130
+            }, {
+              "height": 194,
+              "url": "https://sun9-34.u...l8N4&type=album",
+              "type": "p",
+              "width": 200
+            }, {
+              "height": 310,
+              "url": "https://sun9-34.u...foWg&type=album",
+              "type": "q",
+              "width": 320
+            }, {
+              "height": 494,
+              "url": "https://sun9-34.u...rGYA&type=album",
+              "type": "r",
+              "width": 510
+            }],
+            "text": ""
+          }
+        }],
+        "is_hidden": false
+      }
+    }, {
+      "conversation": {
+        "peer": {
+          "id": 102215747,
+          "type": "user",
+          "local_id": 102215747
+        },
+        "last_message_id": 53,
+        "in_read": 53,
+        "out_read": 0,
+        "sort_id": {
+          "major_id": 0,
+          "minor_id": 53
+        },
+        "is_marked_unread": false,
+        "important": false,
+        "can_write": {
+          "allowed": true
+        }
+      },
+      "last_message": {
+        "date": 1622883451,
+        "from_id": 657727896,
+        "id": 53,
+        "out": 1,
+        "peer_id": 102215747,
+        "text": "Добрый день, Артур!
+
+        У нас для вас хорошая новость. Наши отделения есть в вашем городе (Антрацит). В них вы можете снять или отправить деньги с карт и кошельков, перевести деньги зарубеж, обменять валюту, пополнить баланс телефона и многое другое. Найдите удобное для вас по адресам ниже, чтобы воспользоваться нашими услугами.
+        Подробнее на сайте pkc24.ru или по телефону, или заказав обратный звонок, заполнив форму обратной связи по ссылке vk.cc/c2E8T7
+
+        Отделение №41:
+        Адрес: ул. Петровского 34П
+        Телефоны: +38 (066) 703 63 96, +38 (072) 148 96 36",
+        "conversation_message_id": 1,
+        "fwd_messages": [],
+        "important": false,
+        "random_id": -596558980,
+        "attachments": [{
+          "type": "photo",
+          "photo": {
+            "album_id": -3,
+            "date": 1622883451,
+            "id": 457239047,
+            "owner_id": 657727896,
+            "has_tags": false,
+            "access_key": "37031986824a7a5099",
+            "sizes": [{
+              "height": 73,
+              "url": "https://sun9-34.u...4f2Q&type=album",
+              "type": "s",
+              "width": 75
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "m",
+              "width": 130
+            }, {
+              "height": 585,
+              "url": "https://sun9-34.u...-ODE&type=album",
+              "type": "x",
+              "width": 604
+            }, {
+              "height": 782,
+              "url": "https://sun9-34.u...InfM&type=album",
+              "type": "y",
+              "width": 807
+            }, {
+              "height": 1046,
+              "url": "https://sun9-34.u...Oh9c&type=album",
+              "type": "z",
+              "width": 1080
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "o",
+              "width": 130
+            }, {
+              "height": 194,
+              "url": "https://sun9-34.u...l8N4&type=album",
+              "type": "p",
+              "width": 200
+            }, {
+              "height": 310,
+              "url": "https://sun9-34.u...foWg&type=album",
+              "type": "q",
+              "width": 320
+            }, {
+              "height": 494,
+              "url": "https://sun9-34.u...rGYA&type=album",
+              "type": "r",
+              "width": 510
+            }],
+            "text": ""
+          }
+        }],
+        "is_hidden": false
+      }
+    }, {
+      "conversation": {
+        "peer": {
+          "id": 102112339,
+          "type": "user",
+          "local_id": 102112339
+        },
+        "last_message_id": 52,
+        "in_read": 52,
+        "out_read": 52,
+        "sort_id": {
+          "major_id": 0,
+          "minor_id": 52
+        },
+        "is_marked_unread": false,
+        "important": false,
+        "can_write": {
+          "allowed": true
+        }
+      },
+      "last_message": {
+        "date": 1622883448,
+        "from_id": 657727896,
+        "id": 52,
+        "out": 1,
+        "peer_id": 102112339,
+        "text": "Добрый день, Алёна!
+
+        У нас для вас хорошая новость. Наши отделения есть в вашем городе (Луганск). В них вы можете снять или отправить деньги с карт и кошельков, перевести деньги зарубеж, обменять валюту, пополнить баланс телефона и многое другое. Найдите удобное для вас по адресам ниже, чтобы воспользоваться нашими услугами.
+        Подробнее на сайте pkc24.ru или по телефону, или заказав обратный звонок, заполнив форму обратной связи по ссылке vk.cc/c2E8T7
+
+        Отделение №1:
+        Адрес: ул. Советская 59А
+        Телефоны: +38 (072) 192-39-87, +38 (066) 065-905-0
+
+        Отделение №3:
+        Адрес: кв. Солнечный 3
+        Телефоны: +38 (072) 108-56-03, +38 (099) 223-907-7
+
+        Отделение №4:
+        Адрес: кв. Ленинского Комсомола 14
+        Телефоны: +38 (072) 192-39-89, +38 (050) 196-828-1
+
+        Отделение №5:
+        Адрес: п.Юбилейный, кв. Королева 12
+        Телефоны: +38 (072) 192-39-90, +38 (066) 764-784-5
+
+        Отделение №6:
+        Адрес: ул. Артема 86
+        Телефоны: +38 (072) 192-39-91, +38 (050) 017-908-2
+
+        Отделение №7:
+        Адрес: кв. Шевченко 62
+        Телефоны: +38 (072) 192-39-92, +38 (095) 344-498-6
+
+        Отделение №10:
+        Адрес: кв. Гагарина 1
+        Телефоны: +38 (072) 192-39-95, +38 (095) 316-68-18
+
+        Отделение №14:
+        Адрес: ул. Оборонная 1
+        Телефоны: +38 (072) 192-39-99, +38 (095) 708-210-7
+
+        Отделение №19:
+        Адрес: кв. Молодежный 5
+        Телефоны: +38 (072) 192-40-01, +38 (050) 017-92-58
+
+        Отделение №20:
+        Адрес: ул. Андрея Линева 88Б
+        Телефоны: +38 (072) 192-40-04, +38 (095) 702-347-3
+
+        Отделение №24:
+        Адрес: ул. Градусова 4а
+        Телефоны: +38 (072) 192-40-03, +38 (066) 67-72-473
+
+        Отделение №29:
+        Адрес: ул. Советская 15
+        Телефоны: +38 (072) 182-96-70, +38 (050) 615-510-5
+
+        Отделение №34:
+        Адрес: ул. Оборонная 20А
+        Телефоны: +38 (072) 192-40-06, +38 (095) 744-29-93
+
+        Отделение №35:
+        Адрес: кв. Заречный, 18
+        Телефоны: +38 (066) 224-52-73, +38 (072) 192-40-07
+
+        Отделение №39:
+        Адрес: кв. Жукова 5б
+        Телефоны: +38 (050) 829-85-03, +38 (072)127-59-32
+
+        Отделение №43:
+        Адрес: ул. Оборонная 7А
+        Телефоны: +38 (072) 192-40-11, +38 (095) 045-42-35
+
+        Отделение №44:
+        Адрес: ул. Коцюбинского 8
+        Телефоны: +38 (072) 146-82-12, +38 (095) 045-42-34
+
+        Отделение №49:
+        Адрес: ул. Петровского 9Б
+        Телефоны: +38 (066) 262 11 04, +38 (072) 149 18 93
+
+        Отделение №50:
+        Адрес: кв. Дружбы 1,ТЦ "Марика"
+        Телефоны: +38 (066)703-65-17, +38 (072)163-23-05
+
+        Отделение №51:
+        Адрес: ул. 2-я Краснознаменная 1Г
+        Телефоны: +38 (099) 713-27-34, +38 (072) 178-51-57
+
+        Отделение №53:
+        Адрес: ул. Советская, 58б
+        Телефоны: +38 (095) 473-03-60, +38 (072) 192-40-16
+
+        Отделение №57:
+        Адрес: ул. Королева, 78
+        Телефоны: +38 (095) 473-04-88, +38 (072) 192-40-17
+
+        Отделение №61:
+        Адрес: пгт. Юбилейный, ул. Артема, 12а
+        Телефоны: +38 (072) 177-22-66, +38 (099) 539-34-37
+
+        Отделение №63:
+        Адрес: кв. 50 лет Октября, д. 29
+        Телефоны: +38 (050) 254-84-49, +38 (072)180-35-55
+
+        Отделение №64:
+        Адрес: ул. Советская 71б
+        Телефоны: +38 (050) 254-84-45, +38 (072) 180-35-56
+
+        Отделение №73:
+        Адрес: ул. Челюскинцев 1-У
+        Телефоны: +38 (072) 198-52-29, +38 (066) 759-46-89
+
+        Отделение №74:
+        Адрес: ул. Оборонная "Таксопарк"
+        Телефоны: +38 (072) 198-51-88, +38 (066) 759-48-89
+
+        Отделение №111:
+        Адрес: null
+        Телефоны: null
+
+        Отделение №888:
+        Адрес: null
+        Телефоны: null",
+        "conversation_message_id": 1,
+        "fwd_messages": [],
+        "important": false,
+        "random_id": -87286608,
+        "attachments": [{
+          "type": "photo",
+          "photo": {
+            "album_id": -3,
+            "date": 1622883448,
+            "id": 457239046,
+            "owner_id": 657727896,
+            "has_tags": false,
+            "access_key": "e5a9d75fb19d6d432f",
+            "sizes": [{
+              "height": 73,
+              "url": "https://sun9-34.u...4f2Q&type=album",
+              "type": "s",
+              "width": 75
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "m",
+              "width": 130
+            }, {
+              "height": 585,
+              "url": "https://sun9-34.u...-ODE&type=album",
+              "type": "x",
+              "width": 604
+            }, {
+              "height": 782,
+              "url": "https://sun9-34.u...InfM&type=album",
+              "type": "y",
+              "width": 807
+            }, {
+              "height": 1046,
+              "url": "https://sun9-34.u...Oh9c&type=album",
+              "type": "z",
+              "width": 1080
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "o",
+              "width": 130
+            }, {
+              "height": 194,
+              "url": "https://sun9-34.u...l8N4&type=album",
+              "type": "p",
+              "width": 200
+            }, {
+              "height": 310,
+              "url": "https://sun9-34.u...foWg&type=album",
+              "type": "q",
+              "width": 320
+            }, {
+              "height": 494,
+              "url": "https://sun9-34.u...rGYA&type=album",
+              "type": "r",
+              "width": 510
+            }],
+            "text": ""
+          }
+        }],
+        "is_hidden": false
+      }
+    }, {
+      "conversation": {
+        "peer": {
+          "id": 101818542,
+          "type": "user",
+          "local_id": 101818542
+        },
+        "last_message_id": 51,
+        "in_read": 51,
+        "out_read": 0,
+        "sort_id": {
+          "major_id": 0,
+          "minor_id": 51
+        },
+        "is_marked_unread": false,
+        "important": false,
+        "can_write": {
+          "allowed": true
+        }
+      },
+      "last_message": {
+        "date": 1622883442,
+        "from_id": 657727896,
+        "id": 51,
+        "out": 1,
+        "peer_id": 101818542,
+        "text": "Добрый день, Алла!
+
+        У нас для вас хорошая новость. Наши отделения есть в вашем городе (Алчевск). В них вы можете снять или отправить деньги с карт и кошельков, перевести деньги зарубеж, обменять валюту, пополнить баланс телефона и многое другое. Найдите удобное для вас по адресам ниже, чтобы воспользоваться нашими услугами.
+        Подробнее на сайте pkc24.ru или по телефону, или заказав обратный звонок, заполнив форму обратной связи по ссылке vk.cc/c2E8T7
+
+        Отделение №8:
+        Адрес: ул. Ленина 56
+        Телефоны: +38 (066) 842-05-65, +38 (072) 192-39-93
+
+        Отделение №9:
+        Адрес: ул. Фрунзе 31/14
+        Телефоны: +38 (072) 192-39-94, +38 (066) 954-469-1
+
+        Отделение №48:
+        Адрес: ул. Гмыри, 20 (бывший офис Алчевск.net)
+        Телефоны: +38 (072) 19-24-015, +38 (066) 70-34-653
+
+        Отделение №65:
+        Адрес: ул. Ленина, 80а
+        Телефоны: +38 (072) 181-11-76, +38 (050) 939-56-58",
+        "conversation_message_id": 1,
+        "fwd_messages": [],
+        "important": false,
+        "random_id": -1494363740,
+        "attachments": [{
+          "type": "photo",
+          "photo": {
+            "album_id": -3,
+            "date": 1622883442,
+            "id": 457239044,
+            "owner_id": 657727896,
+            "has_tags": false,
+            "access_key": "16466557152cd5bed9",
+            "sizes": [{
+              "height": 73,
+              "url": "https://sun9-34.u...4f2Q&type=album",
+              "type": "s",
+              "width": 75
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "m",
+              "width": 130
+            }, {
+              "height": 585,
+              "url": "https://sun9-34.u...-ODE&type=album",
+              "type": "x",
+              "width": 604
+            }, {
+              "height": 782,
+              "url": "https://sun9-34.u...InfM&type=album",
+              "type": "y",
+              "width": 807
+            }, {
+              "height": 1046,
+              "url": "https://sun9-34.u...Oh9c&type=album",
+              "type": "z",
+              "width": 1080
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "o",
+              "width": 130
+            }, {
+              "height": 194,
+              "url": "https://sun9-34.u...l8N4&type=album",
+              "type": "p",
+              "width": 200
+            }, {
+              "height": 310,
+              "url": "https://sun9-34.u...foWg&type=album",
+              "type": "q",
+              "width": 320
+            }, {
+              "height": 494,
+              "url": "https://sun9-34.u...rGYA&type=album",
+              "type": "r",
+              "width": 510
+            }],
+            "text": ""
+          }
+        }],
+        "is_hidden": false
+      }
+    }, {
+      "conversation": {
+        "peer": {
+          "id": 101682821,
+          "type": "user",
+          "local_id": 101682821
+        },
+        "last_message_id": 50,
+        "in_read": 50,
+        "out_read": 50,
+        "sort_id": {
+          "major_id": 0,
+          "minor_id": 50
+        },
+        "is_marked_unread": false,
+        "important": false,
+        "can_write": {
+          "allowed": true
+        }
+      },
+      "last_message": {
+        "date": 1622883439,
+        "from_id": 657727896,
+        "id": 50,
+        "out": 1,
+        "peer_id": 101682821,
+        "text": "Добрый день, Алена!
+
+        У нас для вас хорошая новость. Наши отделения есть в вашем городе (Ровеньки). В них вы можете снять или отправить деньги с карт и кошельков, перевести деньги зарубеж, обменять валюту, пополнить баланс телефона и многое другое. Найдите удобное для вас по адресам ниже, чтобы воспользоваться нашими услугами.
+        Подробнее на сайте pkc24.ru или по телефону, или заказав обратный звонок, заполнив форму обратной связи по ссылке vk.cc/c2E8T7
+
+        Отделение №13:
+        Адрес: ул. Кооперативная 6
+        Телефоны: +38 (072) 192-39-98, +38 (050) 278-878-3
+
+        Отделение №15:
+        Адрес: ул. Карла Маркса 115
+        Телефоны: +38 (072) 184-46-91, +38 (095) 447-370-8
+
+        Отделение №37:
+        Адрес: кв. Шахтерский, 4
+        Телефоны: +38 (072) 192-40-09, +38 (050) 173-71-28
+
+        Отделение №40:
+        Адрес: ул. Коммунистическая 15/4
+        Телефоны: +38 (050) 173-70-66, +38 (072) 136-40-76
+
+        Отделение №60:
+        Адрес: ул. Карла Маркса, 125а
+        Телефоны: +38 (099) 713-25-99, +38 (072) 175-36-85
+
+        Отделение №62:
+        Адрес: ул. Фрунзе 76
+        Телефоны: +38 (066) 873-03-25, +38 (072) 178-51-08",
+        "conversation_message_id": 1,
+        "fwd_messages": [],
+        "important": false,
+        "random_id": -1787657900,
+        "attachments": [{
+          "type": "photo",
+          "photo": {
+            "album_id": -3,
+            "date": 1622883439,
+            "id": 457239043,
+            "owner_id": 657727896,
+            "has_tags": false,
+            "access_key": "1e7cbeba8e8a0be43a",
+            "sizes": [{
+              "height": 73,
+              "url": "https://sun9-34.u...4f2Q&type=album",
+              "type": "s",
+              "width": 75
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "m",
+              "width": 130
+            }, {
+              "height": 585,
+              "url": "https://sun9-34.u...-ODE&type=album",
+              "type": "x",
+              "width": 604
+            }, {
+              "height": 782,
+              "url": "https://sun9-34.u...InfM&type=album",
+              "type": "y",
+              "width": 807
+            }, {
+              "height": 1046,
+              "url": "https://sun9-34.u...Oh9c&type=album",
+              "type": "z",
+              "width": 1080
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "o",
+              "width": 130
+            }, {
+              "height": 194,
+              "url": "https://sun9-34.u...l8N4&type=album",
+              "type": "p",
+              "width": 200
+            }, {
+              "height": 310,
+              "url": "https://sun9-34.u...foWg&type=album",
+              "type": "q",
+              "width": 320
+            }, {
+              "height": 494,
+              "url": "https://sun9-34.u...rGYA&type=album",
+              "type": "r",
+              "width": 510
+            }],
+            "text": ""
+          }
+        }, {
+          "type": "link",
+          "link": {
+            "url": "http://pkc24.ru",
+            "title": "Первый коммерческий центр. Курс Валют Луганск",
+            "caption": "pkc24.ru",
+            "description": "Обналичивание денег в Луганске, ЛНР предлагает - первый коммерческий центр. Всегда самый низкий процент и самые выгодные условия только для клиентов первого коммерческого центра.",
+            "photo": {
+              "album_id": -25,
+              "date": 1622806219,
+              "id": 457329604,
+              "owner_id": 2000037240,
+              "has_tags": false,
+              "sizes": [{
+                "height": 19,
+                "url": "https://sun9-23.u...25tM&type=album",
+                "type": "s",
+                "width": 75
+              }, {
+                "height": 33,
+                "url": "https://sun9-23.u...pwik&type=album",
+                "type": "m",
+                "width": 130
+              }, {
+                "height": 88,
+                "url": "https://sun9-23.u...snqg&type=album",
+                "type": "x",
+                "width": 349
+              }, {
+                "height": 87,
+                "url": "https://sun9-23.u...mjAk&type=album",
+                "type": "o",
+                "width": 130
+              }, {
+                "height": 88,
+                "url": "https://sun9-23.u...jsmA&type=album",
+                "type": "p",
+                "width": 200
+              }, {
+                "height": 88,
+                "url": "https://sun9-23.u..._Go0&type=album",
+                "type": "q",
+                "width": 320
+              }, {
+                "height": 88,
+                "url": "https://sun9-23.u...snqg&type=album",
+                "type": "r",
+                "width": 349
+              }],
+              "text": "",
+              "user_id": 100
+            },
+            "is_favorite": false
+          }
+        }],
+        "is_hidden": false
+      }
+    }, {
+      "conversation": {
+        "peer": {
+          "id": 101647926,
+          "type": "user",
+          "local_id": 101647926
+        },
+        "last_message_id": 49,
+        "in_read": 49,
+        "out_read": 49,
+        "sort_id": {
+          "major_id": 0,
+          "minor_id": 49
+        },
+        "is_marked_unread": false,
+        "important": false,
+        "can_write": {
+          "allowed": true
+        }
+      },
+      "last_message": {
+        "date": 1622883436,
+        "from_id": 657727896,
+        "id": 49,
+        "out": 1,
+        "peer_id": 101647926,
+        "text": "Добрый день, Вячеслав!
+
+        У нас для вас хорошая новость. Наши отделения есть в вашем городе (Алчевск). В них вы можете снять или отправить деньги с карт и кошельков, перевести деньги зарубеж, обменять валюту, пополнить баланс телефона и многое другое. Найдите удобное для вас по адресам ниже, чтобы воспользоваться нашими услугами.
+        Подробнее на сайте pkc24.ru или по телефону, или заказав обратный звонок, заполнив форму обратной связи по ссылке vk.cc/c2E8T7
+
+        Отделение №8:
+        Адрес: ул. Ленина 56
+        Телефоны: +38 (066) 842-05-65, +38 (072) 192-39-93
+
+        Отделение №9:
+        Адрес: ул. Фрунзе 31/14
+        Телефоны: +38 (072) 192-39-94, +38 (066) 954-469-1
+
+        Отделение №48:
+        Адрес: ул. Гмыри, 20 (бывший офис Алчевск.net)
+        Телефоны: +38 (072) 19-24-015, +38 (066) 70-34-653
+
+        Отделение №65:
+        Адрес: ул. Ленина, 80а
+        Телефоны: +38 (072) 181-11-76, +38 (050) 939-56-58",
+        "conversation_message_id": 1,
+        "fwd_messages": [],
+        "important": false,
+        "random_id": -209296292,
+        "attachments": [{
+          "type": "photo",
+          "photo": {
+            "album_id": -3,
+            "date": 1622883436,
+            "id": 457239042,
+            "owner_id": 657727896,
+            "has_tags": false,
+            "access_key": "f8f05860c7c728a870",
+            "sizes": [{
+              "height": 73,
+              "url": "https://sun9-34.u...4f2Q&type=album",
+              "type": "s",
+              "width": 75
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "m",
+              "width": 130
+            }, {
+              "height": 585,
+              "url": "https://sun9-34.u...-ODE&type=album",
+              "type": "x",
+              "width": 604
+            }, {
+              "height": 782,
+              "url": "https://sun9-34.u...InfM&type=album",
+              "type": "y",
+              "width": 807
+            }, {
+              "height": 1046,
+              "url": "https://sun9-34.u...Oh9c&type=album",
+              "type": "z",
+              "width": 1080
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "o",
+              "width": 130
+            }, {
+              "height": 194,
+              "url": "https://sun9-34.u...l8N4&type=album",
+              "type": "p",
+              "width": 200
+            }, {
+              "height": 310,
+              "url": "https://sun9-34.u...foWg&type=album",
+              "type": "q",
+              "width": 320
+            }, {
+              "height": 494,
+              "url": "https://sun9-34.u...rGYA&type=album",
+              "type": "r",
+              "width": 510
+            }],
+            "text": ""
+          }
+        }, {
+          "type": "link",
+          "link": {
+            "url": "https://vk.com/pk...p5619682_-154475851",
+            "title": "Pkc24",
+            "caption": "poll.vip243.vkforms.ru",
+            "description": "Форма обратной связи. Для консультации",
+            "button": {
+              "title": "Заполнить",
+              "action": {
+                "type": "open_url",
+                "url": "https://vk.com/app5619682_-154475851"
+              }
+            },
+            "is_favorite": false
+          }
+        }],
+        "is_hidden": false
+      }
+    }, {
+      "conversation": {
+        "peer": {
+          "id": 101589465,
+          "type": "user",
+          "local_id": 101589465
+        },
+        "last_message_id": 48,
+        "in_read": 48,
+        "out_read": 48,
+        "sort_id": {
+          "major_id": 0,
+          "minor_id": 48
+        },
+        "is_marked_unread": false,
+        "important": false,
+        "can_write": {
+          "allowed": true
+        }
+      },
+      "last_message": {
+        "date": 1622883433,
+        "from_id": 657727896,
+        "id": 48,
+        "out": 1,
+        "peer_id": 101589465,
+        "text": "Добрый день, Тихон!
+
+        У нас для вас хорошая новость. Наши отделения есть в вашем городе (Антрацит). В них вы можете снять или отправить деньги с карт и кошельков, перевести деньги зарубеж, обменять валюту, пополнить баланс телефона и многое другое. Найдите удобное для вас по адресам ниже, чтобы воспользоваться нашими услугами.
+        Подробнее на сайте pkc24.ru или по телефону, или заказав обратный звонок, заполнив форму обратной связи по ссылке vk.cc/c2E8T7
+
+        Отделение №41:
+        Адрес: ул. Петровского 34П
+        Телефоны: +38 (066) 703 63 96, +38 (072) 148 96 36",
+        "conversation_message_id": 1,
+        "fwd_messages": [],
+        "important": false,
+        "random_id": 1889207266,
+        "attachments": [{
+          "type": "photo",
+          "photo": {
+            "album_id": -3,
+            "date": 1622883433,
+            "id": 457239041,
+            "owner_id": 657727896,
+            "has_tags": false,
+            "access_key": "3b35c05c2827ec4736",
+            "sizes": [{
+              "height": 73,
+              "url": "https://sun9-34.u...4f2Q&type=album",
+              "type": "s",
+              "width": 75
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "m",
+              "width": 130
+            }, {
+              "height": 585,
+              "url": "https://sun9-34.u...-ODE&type=album",
+              "type": "x",
+              "width": 604
+            }, {
+              "height": 782,
+              "url": "https://sun9-34.u...InfM&type=album",
+              "type": "y",
+              "width": 807
+            }, {
+              "height": 1046,
+              "url": "https://sun9-34.u...Oh9c&type=album",
+              "type": "z",
+              "width": 1080
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "o",
+              "width": 130
+            }, {
+              "height": 194,
+              "url": "https://sun9-34.u...l8N4&type=album",
+              "type": "p",
+              "width": 200
+            }, {
+              "height": 310,
+              "url": "https://sun9-34.u...foWg&type=album",
+              "type": "q",
+              "width": 320
+            }, {
+              "height": 494,
+              "url": "https://sun9-34.u...rGYA&type=album",
+              "type": "r",
+              "width": 510
+            }],
+            "text": ""
+          }
+        }, {
+          "type": "link",
+          "link": {
+            "url": "https://vk.com/pk...p5619682_-154475851",
+            "title": "Pkc24",
+            "caption": "poll.vip243.vkforms.ru",
+            "description": "Форма обратной связи. Для консультации",
+            "button": {
+              "title": "Заполнить",
+              "action": {
+                "type": "open_url",
+                "url": "https://vk.com/app5619682_-154475851"
+              }
+            },
+            "is_favorite": false
+          }
+        }],
+        "is_hidden": false
+      }
+    }, {
+      "conversation": {
+        "peer": {
+          "id": 101492686,
+          "type": "user",
+          "local_id": 101492686
+        },
+        "last_message_id": 47,
+        "in_read": 47,
+        "out_read": 0,
+        "sort_id": {
+          "major_id": 0,
+          "minor_id": 47
+        },
+        "is_marked_unread": false,
+        "important": false,
+        "can_write": {
+          "allowed": true
+        }
+      },
+      "last_message": {
+        "date": 1622883430,
+        "from_id": 657727896,
+        "id": 47,
+        "out": 1,
+        "peer_id": 101492686,
+        "text": "Добрый день, Елена!
+
+        У нас для вас хорошая новость. Наши отделения есть в вашем городе (Краснодон). В них вы можете снять или отправить деньги с карт и кошельков, перевести деньги зарубеж, обменять валюту, пополнить баланс телефона и многое другое. Найдите удобное для вас по адресам ниже, чтобы воспользоваться нашими услугами.
+        Подробнее на сайте pkc24.ru или по телефону, или заказав обратный звонок, заполнив форму обратной связи по ссылке vk.cc/c2E8T7
+
+        Отделение №36:
+        Адрес: ул. Артема 9
+        Телефоны: +38 (072) 192-40-08, +38 (066) 237-45-17
+
+        Отделение №54:
+        Адрес: ул. Петра Котова, 35
+        Телефоны: +38 (099) 713-25-87, +38 (072) 163-43-62",
+        "conversation_message_id": 1,
+        "fwd_messages": [],
+        "important": false,
+        "random_id": 1596901826,
+        "attachments": [{
+          "type": "photo",
+          "photo": {
+            "album_id": -3,
+            "date": 1622883430,
+            "id": 457239040,
+            "owner_id": 657727896,
+            "has_tags": false,
+            "access_key": "bdd4c9d49d6a9f59a6",
+            "sizes": [{
+              "height": 73,
+              "url": "https://sun9-34.u...4f2Q&type=album",
+              "type": "s",
+              "width": 75
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "m",
+              "width": 130
+            }, {
+              "height": 585,
+              "url": "https://sun9-34.u...-ODE&type=album",
+              "type": "x",
+              "width": 604
+            }, {
+              "height": 782,
+              "url": "https://sun9-34.u...InfM&type=album",
+              "type": "y",
+              "width": 807
+            }, {
+              "height": 1046,
+              "url": "https://sun9-34.u...Oh9c&type=album",
+              "type": "z",
+              "width": 1080
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "o",
+              "width": 130
+            }, {
+              "height": 194,
+              "url": "https://sun9-34.u...l8N4&type=album",
+              "type": "p",
+              "width": 200
+            }, {
+              "height": 310,
+              "url": "https://sun9-34.u...foWg&type=album",
+              "type": "q",
+              "width": 320
+            }, {
+              "height": 494,
+              "url": "https://sun9-34.u...rGYA&type=album",
+              "type": "r",
+              "width": 510
+            }],
+            "text": ""
+          }
+        }, {
+          "type": "link",
+          "link": {
+            "url": "https://vk.com/pk...p5619682_-154475851",
+            "title": "Pkc24",
+            "caption": "poll.vip243.vkforms.ru",
+            "description": "Форма обратной связи. Для консультации",
+            "button": {
+              "title": "Заполнить",
+              "action": {
+                "type": "open_url",
+                "url": "https://vk.com/app5619682_-154475851"
+              }
+            },
+            "is_favorite": false
+          }
+        }],
+        "is_hidden": false
+      }
+    }, {
+      "conversation": {
+        "peer": {
+          "id": 101359132,
+          "type": "user",
+          "local_id": 101359132
+        },
+        "last_message_id": 46,
+        "in_read": 46,
+        "out_read": 0,
+        "sort_id": {
+          "major_id": 0,
+          "minor_id": 46
+        },
+        "is_marked_unread": false,
+        "important": false,
+        "can_write": {
+          "allowed": true
+        }
+      },
+      "last_message": {
+        "date": 1622883427,
+        "from_id": 657727896,
+        "id": 46,
+        "out": 1,
+        "peer_id": 101359132,
+        "text": "Добрый день, Oksana!
+
+        У нас для вас хорошая новость. Наши отделения есть в вашем городе (Кировск). В них вы можете снять или отправить деньги с карт и кошельков, перевести деньги зарубеж, обменять валюту, пополнить баланс телефона и многое другое. Найдите удобное для вас по адресам ниже, чтобы воспользоваться нашими услугами.
+        Подробнее на сайте pkc24.ru или по телефону, или заказав обратный звонок, заполнив форму обратной связи по ссылке vk.cc/c2E8T7
+
+        Отделение №71:
+        Адрес: ул. 23 Партсъезда, 4
+        Телефоны: + 38 (050) 699-34-59, + 38 (072) 184-54-94",
+        "conversation_message_id": 1,
+        "fwd_messages": [],
+        "important": false,
+        "random_id": 1323507676,
+        "attachments": [{
+          "type": "photo",
+          "photo": {
+            "album_id": -3,
+            "date": 1622883427,
+            "id": 457239039,
+            "owner_id": 657727896,
+            "has_tags": false,
+            "access_key": "f7fa1938317e056096",
+            "sizes": [{
+              "height": 73,
+              "url": "https://sun9-34.u...4f2Q&type=album",
+              "type": "s",
+              "width": 75
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "m",
+              "width": 130
+            }, {
+              "height": 585,
+              "url": "https://sun9-34.u...-ODE&type=album",
+              "type": "x",
+              "width": 604
+            }, {
+              "height": 782,
+              "url": "https://sun9-34.u...InfM&type=album",
+              "type": "y",
+              "width": 807
+            }, {
+              "height": 1046,
+              "url": "https://sun9-34.u...Oh9c&type=album",
+              "type": "z",
+              "width": 1080
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "o",
+              "width": 130
+            }, {
+              "height": 194,
+              "url": "https://sun9-34.u...l8N4&type=album",
+              "type": "p",
+              "width": 200
+            }, {
+              "height": 310,
+              "url": "https://sun9-34.u...foWg&type=album",
+              "type": "q",
+              "width": 320
+            }, {
+              "height": 494,
+              "url": "https://sun9-34.u...rGYA&type=album",
+              "type": "r",
+              "width": 510
+            }],
+            "text": ""
+          }
+        }, {
+          "type": "link",
+          "link": {
+            "url": "https://vk.com/pk...p5619682_-154475851",
+            "title": "Pkc24",
+            "caption": "poll.vip243.vkforms.ru",
+            "description": "Форма обратной связи. Для консультации",
+            "button": {
+              "title": "Заполнить",
+              "action": {
+                "type": "open_url",
+                "url": "https://vk.com/app5619682_-154475851"
+              }
+            },
+            "is_favorite": false
+          }
+        }],
+        "is_hidden": false
+      }
+    }, {
+      "conversation": {
+        "peer": {
+          "id": 101246180,
+          "type": "user",
+          "local_id": 101246180
+        },
+        "last_message_id": 45,
+        "in_read": 45,
+        "out_read": 0,
+        "sort_id": {
+          "major_id": 0,
+          "minor_id": 45
+        },
+        "is_marked_unread": false,
+        "important": false,
+        "can_write": {
+          "allowed": true
+        }
+      },
+      "last_message": {
+        "date": 1622883421,
+        "from_id": 657727896,
+        "id": 45,
+        "out": 1,
+        "peer_id": 101246180,
+        "text": "Добрый день, Инна!
+
+        У нас для вас хорошая новость. Наши отделения есть в вашем городе (Лутугино). В них вы можете снять или отправить деньги с карт и кошельков, перевести деньги зарубеж, обменять валюту, пополнить баланс телефона и многое другое. Найдите удобное для вас по адресам ниже, чтобы воспользоваться нашими услугами.
+        Подробнее на сайте pkc24.ru или по телефону, или заказав обратный звонок, заполнив форму обратной связи по ссылке vk.cc/c2E8T7
+
+        Отделение №18:
+        Адрес: ул. Ленина 116
+        Телефоны: +38 (072) 127-59-28, +38 (066) 157-406-1",
+        "conversation_message_id": 1,
+        "fwd_messages": [],
+        "important": false,
+        "random_id": -358496520,
+        "attachments": [{
+          "type": "photo",
+          "photo": {
+            "album_id": -3,
+            "date": 1622883421,
+            "id": 457239037,
+            "owner_id": 657727896,
+            "has_tags": false,
+            "access_key": "39dd2fd2de723a13b1",
+            "sizes": [{
+              "height": 73,
+              "url": "https://sun9-34.u...4f2Q&type=album",
+              "type": "s",
+              "width": 75
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "m",
+              "width": 130
+            }, {
+              "height": 585,
+              "url": "https://sun9-34.u...-ODE&type=album",
+              "type": "x",
+              "width": 604
+            }, {
+              "height": 782,
+              "url": "https://sun9-34.u...InfM&type=album",
+              "type": "y",
+              "width": 807
+            }, {
+              "height": 1046,
+              "url": "https://sun9-34.u...Oh9c&type=album",
+              "type": "z",
+              "width": 1080
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "o",
+              "width": 130
+            }, {
+              "height": 194,
+              "url": "https://sun9-34.u...l8N4&type=album",
+              "type": "p",
+              "width": 200
+            }, {
+              "height": 310,
+              "url": "https://sun9-34.u...foWg&type=album",
+              "type": "q",
+              "width": 320
+            }, {
+              "height": 494,
+              "url": "https://sun9-34.u...rGYA&type=album",
+              "type": "r",
+              "width": 510
+            }],
+            "text": ""
+          }
+        }, {
+          "type": "link",
+          "link": {
+            "url": "https://vk.com/pk...p5619682_-154475851",
+            "title": "Pkc24",
+            "caption": "poll.vip243.vkforms.ru",
+            "description": "Форма обратной связи. Для консультации",
+            "button": {
+              "title": "Заполнить",
+              "action": {
+                "type": "open_url",
+                "url": "https://vk.com/app5619682_-154475851"
+              }
+            },
+            "is_favorite": false
+          }
+        }],
+        "is_hidden": false
+      }
+    }, {
+      "conversation": {
+        "peer": {
+          "id": 10115542,
+          "type": "user",
+          "local_id": 10115542
+        },
+        "last_message_id": 44,
+        "in_read": 44,
+        "out_read": 0,
+        "sort_id": {
+          "major_id": 0,
+          "minor_id": 44
+        },
+        "is_marked_unread": false,
+        "important": false,
+        "can_write": {
+          "allowed": true
+        }
+      },
+      "last_message": {
+        "date": 1622883418,
+        "from_id": 657727896,
+        "id": 44,
+        "out": 1,
+        "peer_id": 10115542,
+        "text": "Добрый день, Евгения!
+
+        У нас для вас хорошая новость. Наши отделения есть в вашем городе (Луганск). В них вы можете снять или отправить деньги с карт и кошельков, перевести деньги зарубеж, обменять валюту, пополнить баланс телефона и многое другое. Найдите удобное для вас по адресам ниже, чтобы воспользоваться нашими услугами.
+        Подробнее на сайте pkc24.ru или по телефону, или заказав обратный звонок, заполнив форму обратной связи по ссылке vk.cc/c2E8T7
+
+        Отделение №1:
+        Адрес: ул. Советская 59А
+        Телефоны: +38 (072) 192-39-87, +38 (066) 065-905-0
+
+        Отделение №3:
+        Адрес: кв. Солнечный 3
+        Телефоны: +38 (072) 108-56-03, +38 (099) 223-907-7
+
+        Отделение №4:
+        Адрес: кв. Ленинского Комсомола 14
+        Телефоны: +38 (072) 192-39-89, +38 (050) 196-828-1
+
+        Отделение №5:
+        Адрес: п.Юбилейный, кв. Королева 12
+        Телефоны: +38 (072) 192-39-90, +38 (066) 764-784-5
+
+        Отделение №6:
+        Адрес: ул. Артема 86
+        Телефоны: +38 (072) 192-39-91, +38 (050) 017-908-2
+
+        Отделение №7:
+        Адрес: кв. Шевченко 62
+        Телефоны: +38 (072) 192-39-92, +38 (095) 344-498-6
+
+        Отделение №10:
+        Адрес: кв. Гагарина 1
+        Телефоны: +38 (072) 192-39-95, +38 (095) 316-68-18
+
+        Отделение №14:
+        Адрес: ул. Оборонная 1
+        Телефоны: +38 (072) 192-39-99, +38 (095) 708-210-7
+
+        Отделение №19:
+        Адрес: кв. Молодежный 5
+        Телефоны: +38 (072) 192-40-01, +38 (050) 017-92-58
+
+        Отделение №20:
+        Адрес: ул. Андрея Линева 88Б
+        Телефоны: +38 (072) 192-40-04, +38 (095) 702-347-3
+
+        Отделение №24:
+        Адрес: ул. Градусова 4а
+        Телефоны: +38 (072) 192-40-03, +38 (066) 67-72-473
+
+        Отделение №29:
+        Адрес: ул. Советская 15
+        Телефоны: +38 (072) 182-96-70, +38 (050) 615-510-5
+
+        Отделение №34:
+        Адрес: ул. Оборонная 20А
+        Телефоны: +38 (072) 192-40-06, +38 (095) 744-29-93
+
+        Отделение №35:
+        Адрес: кв. Заречный, 18
+        Телефоны: +38 (066) 224-52-73, +38 (072) 192-40-07
+
+        Отделение №39:
+        Адрес: кв. Жукова 5б
+        Телефоны: +38 (050) 829-85-03, +38 (072)127-59-32
+
+        Отделение №43:
+        Адрес: ул. Оборонная 7А
+        Телефоны: +38 (072) 192-40-11, +38 (095) 045-42-35
+
+        Отделение №44:
+        Адрес: ул. Коцюбинского 8
+        Телефоны: +38 (072) 146-82-12, +38 (095) 045-42-34
+
+        Отделение №49:
+        Адрес: ул. Петровского 9Б
+        Телефоны: +38 (066) 262 11 04, +38 (072) 149 18 93
+
+        Отделение №50:
+        Адрес: кв. Дружбы 1,ТЦ "Марика"
+        Телефоны: +38 (066)703-65-17, +38 (072)163-23-05
+
+        Отделение №51:
+        Адрес: ул. 2-я Краснознаменная 1Г
+        Телефоны: +38 (099) 713-27-34, +38 (072) 178-51-57
+
+        Отделение №53:
+        Адрес: ул. Советская, 58б
+        Телефоны: +38 (095) 473-03-60, +38 (072) 192-40-16
+
+        Отделение №57:
+        Адрес: ул. Королева, 78
+        Телефоны: +38 (095) 473-04-88, +38 (072) 192-40-17
+
+        Отделение №61:
+        Адрес: пгт. Юбилейный, ул. Артема, 12а
+        Телефоны: +38 (072) 177-22-66, +38 (099) 539-34-37
+
+        Отделение №63:
+        Адрес: кв. 50 лет Октября, д. 29
+        Телефоны: +38 (050) 254-84-49, +38 (072)180-35-55
+
+        Отделение №64:
+        Адрес: ул. Советская 71б
+        Телефоны: +38 (050) 254-84-45, +38 (072) 180-35-56
+
+        Отделение №73:
+        Адрес: ул. Челюскинцев 1-У
+        Телефоны: +38 (072) 198-52-29, +38 (066) 759-46-89
+
+        Отделение №74:
+        Адрес: ул. Оборонная "Таксопарк"
+        Телефоны: +38 (072) 198-51-88, +38 (066) 759-48-89
+
+        Отделение №111:
+        Адрес: null
+        Телефоны: null
+
+        Отделение №888:
+        Адрес: null
+        Телефоны: null",
+        "conversation_message_id": 1,
+        "fwd_messages": [],
+        "important": false,
+        "random_id": -388926348,
+        "attachments": [{
+          "type": "photo",
+          "photo": {
+            "album_id": -3,
+            "date": 1622883418,
+            "id": 457239036,
+            "owner_id": 657727896,
+            "has_tags": false,
+            "access_key": "1def81c35a6fe2231a",
+            "sizes": [{
+              "height": 73,
+              "url": "https://sun9-34.u...4f2Q&type=album",
+              "type": "s",
+              "width": 75
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "m",
+              "width": 130
+            }, {
+              "height": 585,
+              "url": "https://sun9-34.u...-ODE&type=album",
+              "type": "x",
+              "width": 604
+            }, {
+              "height": 782,
+              "url": "https://sun9-34.u...InfM&type=album",
+              "type": "y",
+              "width": 807
+            }, {
+              "height": 1046,
+              "url": "https://sun9-34.u...Oh9c&type=album",
+              "type": "z",
+              "width": 1080
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "o",
+              "width": 130
+            }, {
+              "height": 194,
+              "url": "https://sun9-34.u...l8N4&type=album",
+              "type": "p",
+              "width": 200
+            }, {
+              "height": 310,
+              "url": "https://sun9-34.u...foWg&type=album",
+              "type": "q",
+              "width": 320
+            }, {
+              "height": 494,
+              "url": "https://sun9-34.u...rGYA&type=album",
+              "type": "r",
+              "width": 510
+            }],
+            "text": ""
+          }
+        }, {
+          "type": "link",
+          "link": {
+            "url": "https://vk.com/pk...p5619682_-154475851",
+            "title": "Pkc24",
+            "caption": "poll.vip243.vkforms.ru",
+            "description": "Форма обратной связи. Для консультации",
+            "button": {
+              "title": "Заполнить",
+              "action": {
+                "type": "open_url",
+                "url": "https://vk.com/app5619682_-154475851"
+              }
+            },
+            "is_favorite": false
+          }
+        }],
+        "is_hidden": false
+      }
+    }, {
+      "conversation": {
+        "peer": {
+          "id": 100924788,
+          "type": "user",
+          "local_id": 100924788
+        },
+        "last_message_id": 43,
+        "in_read": 43,
+        "out_read": 43,
+        "sort_id": {
+          "major_id": 0,
+          "minor_id": 43
+        },
+        "is_marked_unread": false,
+        "important": false,
+        "can_write": {
+          "allowed": true
+        }
+      },
+      "last_message": {
+        "date": 1622883415,
+        "from_id": 657727896,
+        "id": 43,
+        "out": 1,
+        "peer_id": 100924788,
+        "text": "Добрый день, Руслан!
+
+        У нас для вас хорошая новость. Наши отделения есть в вашем городе (Ровеньки). В них вы можете снять или отправить деньги с карт и кошельков, перевести деньги зарубеж, обменять валюту, пополнить баланс телефона и многое другое. Найдите удобное для вас по адресам ниже, чтобы воспользоваться нашими услугами.
+        Подробнее на сайте pkc24.ru или по телефону, или заказав обратный звонок, заполнив форму обратной связи по ссылке vk.cc/c2E8T7
+
+        Отделение №13:
+        Адрес: ул. Кооперативная 6
+        Телефоны: +38 (072) 192-39-98, +38 (050) 278-878-3
+
+        Отделение №15:
+        Адрес: ул. Карла Маркса 115
+        Телефоны: +38 (072) 184-46-91, +38 (095) 447-370-8
+
+        Отделение №37:
+        Адрес: кв. Шахтерский, 4
+        Телефоны: +38 (072) 192-40-09, +38 (050) 173-71-28
+
+        Отделение №40:
+        Адрес: ул. Коммунистическая 15/4
+        Телефоны: +38 (050) 173-70-66, +38 (072) 136-40-76
+
+        Отделение №60:
+        Адрес: ул. Карла Маркса, 125а
+        Телефоны: +38 (099) 713-25-99, +38 (072) 175-36-85
+
+        Отделение №62:
+        Адрес: ул. Фрунзе 76
+        Телефоны: +38 (066) 873-03-25, +38 (072) 178-51-08",
+        "conversation_message_id": 1,
+        "fwd_messages": [],
+        "important": false,
+        "random_id": -415766104,
+        "attachments": [{
+          "type": "photo",
+          "photo": {
+            "album_id": -3,
+            "date": 1622883415,
+            "id": 457239035,
+            "owner_id": 657727896,
+            "has_tags": false,
+            "access_key": "d0a323860a1ce6509c",
+            "sizes": [{
+              "height": 73,
+              "url": "https://sun9-34.u...4f2Q&type=album",
+              "type": "s",
+              "width": 75
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "m",
+              "width": 130
+            }, {
+              "height": 585,
+              "url": "https://sun9-34.u...-ODE&type=album",
+              "type": "x",
+              "width": 604
+            }, {
+              "height": 782,
+              "url": "https://sun9-34.u...InfM&type=album",
+              "type": "y",
+              "width": 807
+            }, {
+              "height": 1046,
+              "url": "https://sun9-34.u...Oh9c&type=album",
+              "type": "z",
+              "width": 1080
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "o",
+              "width": 130
+            }, {
+              "height": 194,
+              "url": "https://sun9-34.u...l8N4&type=album",
+              "type": "p",
+              "width": 200
+            }, {
+              "height": 310,
+              "url": "https://sun9-34.u...foWg&type=album",
+              "type": "q",
+              "width": 320
+            }, {
+              "height": 494,
+              "url": "https://sun9-34.u...rGYA&type=album",
+              "type": "r",
+              "width": 510
+            }],
+            "text": ""
+          }
+        }, {
+          "type": "link",
+          "link": {
+            "url": "https://vk.com/pk...p5619682_-154475851",
+            "title": "Pkc24",
+            "caption": "poll.vip243.vkforms.ru",
+            "description": "Форма обратной связи. Для консультации",
+            "button": {
+              "title": "Заполнить",
+              "action": {
+                "type": "open_url",
+                "url": "https://vk.com/app5619682_-154475851"
+              }
+            },
+            "is_favorite": false
+          }
+        }],
+        "is_hidden": false
+      }
+    }, {
+      "conversation": {
+        "peer": {
+          "id": 100728391,
+          "type": "user",
+          "local_id": 100728391
+        },
+        "last_message_id": 42,
+        "in_read": 42,
+        "out_read": 0,
+        "sort_id": {
+          "major_id": 0,
+          "minor_id": 42
+        },
+        "is_marked_unread": false,
+        "important": false,
+        "can_write": {
+          "allowed": true
+        }
+      },
+      "last_message": {
+        "date": 1622883409,
+        "from_id": 657727896,
+        "id": 42,
+        "out": 1,
+        "peer_id": 100728391,
+        "text": "Добрый день, Наталья!
+
+        У нас для вас хорошая новость. Наши отделения есть в вашем городе (Антрацит). В них вы можете снять или отправить деньги с карт и кошельков, перевести деньги зарубеж, обменять валюту, пополнить баланс телефона и многое другое. Найдите удобное для вас по адресам ниже, чтобы воспользоваться нашими услугами.
+        Подробнее на сайте pkc24.ru или по телефону, или заказав обратный звонок, заполнив форму обратной связи по ссылке vk.cc/c2E8T7
+
+        Отделение №41:
+        Адрес: ул. Петровского 34П
+        Телефоны: +38 (066) 703 63 96, +38 (072) 148 96 36",
+        "conversation_message_id": 1,
+        "fwd_messages": [],
+        "important": false,
+        "random_id": -478292904,
+        "attachments": [{
+          "type": "photo",
+          "photo": {
+            "album_id": -3,
+            "date": 1622883409,
+            "id": 457239033,
+            "owner_id": 657727896,
+            "has_tags": false,
+            "access_key": "d7ca6ae063706d2400",
+            "sizes": [{
+              "height": 73,
+              "url": "https://sun9-34.u...4f2Q&type=album",
+              "type": "s",
+              "width": 75
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "m",
+              "width": 130
+            }, {
+              "height": 585,
+              "url": "https://sun9-34.u...-ODE&type=album",
+              "type": "x",
+              "width": 604
+            }, {
+              "height": 782,
+              "url": "https://sun9-34.u...InfM&type=album",
+              "type": "y",
+              "width": 807
+            }, {
+              "height": 1046,
+              "url": "https://sun9-34.u...Oh9c&type=album",
+              "type": "z",
+              "width": 1080
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "o",
+              "width": 130
+            }, {
+              "height": 194,
+              "url": "https://sun9-34.u...l8N4&type=album",
+              "type": "p",
+              "width": 200
+            }, {
+              "height": 310,
+              "url": "https://sun9-34.u...foWg&type=album",
+              "type": "q",
+              "width": 320
+            }, {
+              "height": 494,
+              "url": "https://sun9-34.u...rGYA&type=album",
+              "type": "r",
+              "width": 510
+            }],
+            "text": ""
+          }
+        }, {
+          "type": "link",
+          "link": {
+            "url": "https://vk.com/pk...p5619682_-154475851",
+            "title": "Pkc24",
+            "caption": "poll.vip243.vkforms.ru",
+            "description": "Форма обратной связи. Для консультации",
+            "button": {
+              "title": "Заполнить",
+              "action": {
+                "type": "open_url",
+                "url": "https://vk.com/app5619682_-154475851"
+              }
+            },
+            "is_favorite": false
+          }
+        }],
+        "is_hidden": false
+      }
+    }, {
+      "conversation": {
+        "peer": {
+          "id": 10041889,
+          "type": "user",
+          "local_id": 10041889
+        },
+        "last_message_id": 41,
+        "in_read": 41,
+        "out_read": 41,
+        "sort_id": {
+          "major_id": 0,
+          "minor_id": 41
+        },
+        "is_marked_unread": false,
+        "important": false,
+        "can_write": {
+          "allowed": true
+        }
+      },
+      "last_message": {
+        "date": 1622883406,
+        "from_id": 657727896,
+        "id": 41,
+        "out": 1,
+        "peer_id": 10041889,
+        "text": "Добрый день, Танюша!
+
+        У нас для вас хорошая новость. Наши отделения есть в вашем городе (Кировск). В них вы можете снять или отправить деньги с карт и кошельков, перевести деньги зарубеж, обменять валюту, пополнить баланс телефона и многое другое. Найдите удобное для вас по адресам ниже, чтобы воспользоваться нашими услугами.
+        Подробнее на сайте pkc24.ru или по телефону, или заказав обратный звонок, заполнив форму обратной связи по ссылке vk.cc/c2E8T7
+
+        Отделение №71:
+        Адрес: ул. 23 Партсъезда, 4
+        Телефоны: + 38 (050) 699-34-59, + 38 (072) 184-54-94",
+        "conversation_message_id": 1,
+        "fwd_messages": [],
+        "important": false,
+        "random_id": -835095134,
+        "attachments": [{
+          "type": "photo",
+          "photo": {
+            "album_id": -3,
+            "date": 1622883406,
+            "id": 457239032,
+            "owner_id": 657727896,
+            "has_tags": false,
+            "access_key": "cf129c8a9155e3b0df",
+            "sizes": [{
+              "height": 73,
+              "url": "https://sun9-34.u...4f2Q&type=album",
+              "type": "s",
+              "width": 75
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "m",
+              "width": 130
+            }, {
+              "height": 585,
+              "url": "https://sun9-34.u...-ODE&type=album",
+              "type": "x",
+              "width": 604
+            }, {
+              "height": 782,
+              "url": "https://sun9-34.u...InfM&type=album",
+              "type": "y",
+              "width": 807
+            }, {
+              "height": 1046,
+              "url": "https://sun9-34.u...Oh9c&type=album",
+              "type": "z",
+              "width": 1080
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "o",
+              "width": 130
+            }, {
+              "height": 194,
+              "url": "https://sun9-34.u...l8N4&type=album",
+              "type": "p",
+              "width": 200
+            }, {
+              "height": 310,
+              "url": "https://sun9-34.u...foWg&type=album",
+              "type": "q",
+              "width": 320
+            }, {
+              "height": 494,
+              "url": "https://sun9-34.u...rGYA&type=album",
+              "type": "r",
+              "width": 510
+            }],
+            "text": ""
+          }
+        }, {
+          "type": "link",
+          "link": {
+            "url": "https://vk.com/pk...p5619682_-154475851",
+            "title": "Pkc24",
+            "caption": "poll.vip243.vkforms.ru",
+            "description": "Форма обратной связи. Для консультации",
+            "button": {
+              "title": "Заполнить",
+              "action": {
+                "type": "open_url",
+                "url": "https://vk.com/app5619682_-154475851"
+              }
+            },
+            "is_favorite": false
+          }
+        }],
+        "is_hidden": false
+      }
+    }, {
+      "conversation": {
+        "peer": {
+          "id": 100061267,
+          "type": "user",
+          "local_id": 100061267
+        },
+        "last_message_id": 40,
+        "in_read": 40,
+        "out_read": 0,
+        "sort_id": {
+          "major_id": 0,
+          "minor_id": 40
+        },
+        "is_marked_unread": false,
+        "important": false,
+        "can_write": {
+          "allowed": true
+        }
+      },
+      "last_message": {
+        "date": 1622883403,
+        "from_id": 657727896,
+        "id": 40,
+        "out": 1,
+        "peer_id": 100061267,
+        "text": "Добрый день, Юлия!
+
+        У нас для вас хорошая новость. Наши отделения есть в вашем городе (Алчевск). В них вы можете снять или отправить деньги с карт и кошельков, перевести деньги зарубеж, обменять валюту, пополнить баланс телефона и многое другое. Найдите удобное для вас по адресам ниже, чтобы воспользоваться нашими услугами.
+        Подробнее на сайте pkc24.ru или по телефону, или заказав обратный звонок, заполнив форму обратной связи по ссылке vk.cc/c2E8T7
+
+        Отделение №8:
+        Адрес: ул. Ленина 56
+        Телефоны: +38 (066) 842-05-65, +38 (072) 192-39-93
+
+        Отделение №9:
+        Адрес: ул. Фрунзе 31/14
+        Телефоны: +38 (072) 192-39-94, +38 (066) 954-469-1
+
+        Отделение №48:
+        Адрес: ул. Гмыри, 20 (бывший офис Алчевск.net)
+        Телефоны: +38 (072) 19-24-015, +38 (066) 70-34-653
+
+        Отделение №65:
+        Адрес: ул. Ленина, 80а
+        Телефоны: +38 (072) 181-11-76, +38 (050) 939-56-58",
+        "conversation_message_id": 1,
+        "fwd_messages": [],
+        "important": false,
+        "random_id": -1134097444,
+        "attachments": [{
+          "type": "photo",
+          "photo": {
+            "album_id": -3,
+            "date": 1622883403,
+            "id": 457239031,
+            "owner_id": 657727896,
+            "has_tags": false,
+            "access_key": "b4456728746506ece7",
+            "sizes": [{
+              "height": 73,
+              "url": "https://sun9-34.u...4f2Q&type=album",
+              "type": "s",
+              "width": 75
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "m",
+              "width": 130
+            }, {
+              "height": 585,
+              "url": "https://sun9-34.u...-ODE&type=album",
+              "type": "x",
+              "width": 604
+            }, {
+              "height": 782,
+              "url": "https://sun9-34.u...InfM&type=album",
+              "type": "y",
+              "width": 807
+            }, {
+              "height": 1046,
+              "url": "https://sun9-34.u...Oh9c&type=album",
+              "type": "z",
+              "width": 1080
+            }, {
+              "height": 126,
+              "url": "https://sun9-34.u...d8Aw&type=album",
+              "type": "o",
+              "width": 130
+            }, {
+              "height": 194,
+              "url": "https://sun9-34.u...l8N4&type=album",
+              "type": "p",
+              "width": 200
+            }, {
+              "height": 310,
+              "url": "https://sun9-34.u...foWg&type=album",
+              "type": "q",
+              "width": 320
+            }, {
+              "height": 494,
+              "url": "https://sun9-34.u...rGYA&type=album",
+              "type": "r",
+              "width": 510
+            }],
+            "text": ""
+          }
+        }, {
+          "type": "link",
+          "link": {
+            "url": "https://vk.com/pk...p5619682_-154475851",
+            "title": "Pkc24",
+            "caption": "poll.vip243.vkforms.ru",
+            "description": "Форма обратной связи. Для консультации",
+            "button": {
+              "title": "Заполнить",
+              "action": {
+                "type": "open_url",
+                "url": "https://vk.com/app5619682_-154475851"
+              }
+            },
+            "is_favorite": false
+          }
+        }],
+        "is_hidden": false
+      }
+    }]
+  }
+}
