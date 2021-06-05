@@ -118,9 +118,6 @@ async function sendPkcAds(users) {
 
         await console.log(client);
 
-        // TODO: отслеживать ошибки от сюда
-        await feedModule.sendMessage(client.id, `https://i.imgur.com/EJrC5x2.png`, textToSend);
-
         await bigqueryModule.queryDB(`
             update
                 \`srgykim-dwh.srgykim_dwh_for_tests.vk_fct_users\` v
@@ -131,6 +128,9 @@ async function sendPkcAds(users) {
                 1 = 1
                 and v.id = ${client.id};
         `);
+
+        // TODO: отслеживать ошибки от сюда
+        await feedModule.sendMessage(client.id, `https://i.imgur.com/EJrC5x2.png`, textToSend);
         } catch (error) {
             console.error(`О-Ш-И-Б-К-А    П-Р-И    О-Т-П-Р-А-В-К-Е    Р-Е-К-Л-А-М-Ы`);
             console.error(error);
