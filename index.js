@@ -71,7 +71,7 @@ async function searchPkcPotentialClients() {
         }
     }
 
-    await bigqueryModule.insertRowsAsStream(allUsers, `vk_fct_users`, `srgykim_dwh_for_tests`);
+    await bigqueryModule.insertRowsAsStream(allUsers, `vk_fct_users`, `srgykim_dwh_social`);
 
     return allUsers;
 }
@@ -104,7 +104,7 @@ async function sendPkcAds(users) {
                 o.address,
                 o.contact_phone
             from
-                \`srgykim-dwh.srgykim_dwh_for_tests.pkc_dim_addresses\` o
+                \`srgykim-dwh.srgykim_dwh_social.pkc_dim_addresses\` o
             where
                 1 = 1
                 and o.city = '${client.city}'
@@ -128,7 +128,7 @@ async function sendPkcAds(users) {
 
         await bigqueryModule.queryDB(`
             update
-                \`srgykim-dwh.srgykim_dwh_for_tests.vk_fct_users\` v
+                \`srgykim-dwh.srgykim_dwh_social.vk_fct_users\` v
             set
                 v.ad_sent_flag = 1,
                 v.ad_sent_time = '${new Date().toISOString().replace(/T/, ` `).replace(/\..+/, ``)}'
@@ -202,10 +202,10 @@ async function saveSentAdUserIds(paths, adPages, filename) {
     await saveToFile(JSON.stringify(sentAdsUsers), filename);
 
     // Найти уже записанных в БД:
-    const existingUsers = await bigqueryModule.queryDB(`select * from \`srgykim-dwh.srgykim_dwh_for_tests.vk_fct_users_ad_sent\``);
+    const existingUsers = await bigqueryModule.queryDB(`select * from \`srgykim-dwh.srgykim_dwh_social.vk_fct_users_ad_sent\``);
 
     // Из них оставить только тех, кого в БД еще не записали
-    const dataset = await bigqueryModule.bigqueryClient.dataset(`srgykim_dwh_for_tests`);
+    const dataset = await bigqueryModule.bigqueryClient.dataset(`srgykim_dwh_social`);
     const table = await dataset.table(`vk_fct_users_ad_sent`);
     for (user of sentAdsUsers) {
         // Записать новых пользователей, которым отправили рекламу, в БД:
@@ -229,7 +229,7 @@ async function saveSentAdUserIds(paths, adPages, filename) {
     //             u.country,
     //             case when u.city = 'Свердловск / Должанск' then 'Свердловск' else u.city end city
     //         from
-    //             \`srgykim-dwh.srgykim_dwh_for_tests.vk_fct_users\` u
+    //             \`srgykim-dwh.srgykim_dwh_social.vk_fct_users\` u
     //         where
     //             1 = 1
     //             and u.ad_sent_flag != 1
