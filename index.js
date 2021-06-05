@@ -100,7 +100,8 @@ async function sendPkcAds(users) {
             where
                 1 = 1
                 and o.city = '${client.city}'
-                and o.open_or_closed = 'Открыто';
+                and o.open_or_closed = 'Открыто'
+                and o.contact_phone is not null;
         `);
 
         let nearestAddresses = ``;
@@ -124,7 +125,8 @@ async function sendPkcAds(users) {
             update
                 \`srgykim-dwh.srgykim_dwh_for_tests.vk_fct_users\` v
             set
-                v.ad_sent_flag = 1
+                v.ad_sent_flag = 1,
+                v.ad_sent_time = '${new Date().toISOString().replace(/T/, ` `).replace(/\..+/, ``)}'
             where
                 1 = 1
                 and v.id = ${client.id};
@@ -138,11 +140,23 @@ async function sendPkcAds(users) {
 }
 
 /*
+* Добавить несущетсвующий объект в массив по ID.
+* @param {nonExistingUsers} - список несущетсвующих пользователей
+* @param {existingUsers} - список существующих пользователей
+* @param {nonExistingUser} - новый несуществующий пользователь
+* */
+async function addNonExistingUser(nonExistingUsers, existingUsers, nonExistingUser) {
+    const found = existingUsers.some(el => el.id === nonExistingUser.id);
+    if (!found) nonExistingUsers.push(nonExistingUser);
+    return nonExistingUsers;
+}
+
+/*
 * Считать файлы с сообщениями для сохранения в БД. Файлы нужно скачать от сюда https://vk.com/dev/messages.getConversations
 * @param {path1} - путь к файлу Лизы
 * @param {path2} - путь к файлу Насти
 * */
-async function saveSentAdUserIds(path1, path2) {
+async function saveSentAdUserIds(path1, path2, filename) {
     let sentAdsUsersIds = [];
     const lisaMessages = await feedModule.readMessagesFromFile(path1);
     const nastyaMessages = await feedModule.readMessagesFromFile(path2);
@@ -171,8 +185,17 @@ async function saveSentAdUserIds(path1, path2) {
         }
     }
 
-    await saveToFile(JSON.stringify(sentAdsUsersIds), `lisa_nastya_05_06_2021.json`);
-    await bigqueryModule.insertRowsAsStream(sentAdsUsersIds, `vk_fct_users_ad_sent`, `srgykim_dwh_for_tests`);
+    await saveToFile(JSON.stringify(sentAdsUsersIds), filename);
+
+    const existingUsers = await bigqueryModule.queryDB(`select * from \`srgykim-dwh.srgykim_dwh_for_tests.vk_fct_users_ad_sent\``);
+    const nonExistingUsers = [];
+    for (user of sentAdsUsersIds) {
+        await addNonExistingUser(nonExistingUsers, existingUsers, user);
+    }
+
+    const dataset = await bigqueryModule.bigqueryClient.dataset(`srgykim_dwh_for_tests`);
+    const table = await dataset.table(`vk_fct_users_ad_sent`);
+    await table.insert(existingUsers);
 }
 
 (async () => {
@@ -204,6 +227,6 @@ async function saveSentAdUserIds(path1, path2) {
     // await sendPkcAds([{id: 176948395, first_name: `Сергей`, last_name: `Ким`, country: `Казахстан`, city: `Ровеньки`}]);
     // await sendPkcAds(clients);
 
-    // TODO: Раскомментировать, чтобы считать файл с сообщениями.
-    // await saveSentAdUserIds(`./dump/lisa_05_06_2021_dump.json`, `./dump/nastya_05_06_2021_dump.json`);
+    // TODO: Раскомментировать, чтобы считать файл с сообщениями и сохранить ID пользователей, кому отправили рекламу.
+    await saveSentAdUserIds(`./dump/lisa_06_06_2021_dump.json`, `./dump/nastya_06_06_2021_dump.json`, `lisa_nastya_06_06_2021`);
 })();

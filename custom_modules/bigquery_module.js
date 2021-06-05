@@ -43,5 +43,6 @@ async function queryDB(sqlQuery) {
 
 module.exports = {
     insertRowsAsStream,
-    queryDB
+    queryDB,
+    bigqueryClient
 }
